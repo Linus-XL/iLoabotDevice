@@ -87,9 +87,9 @@ public:
     virtual std::unique_ptr<PLC> create() const = 0;
 };
 
-class ILoabotFactory {
+class iLoabotFactory {
 public:
-    virtual ~ILoabotFactory() = default;
+    virtual ~iLoabotFactory() = default;
     virtual const RobotFactory& robotFactory() const = 0;
     virtual const AGVFactory& agvFactory() const = 0;
     virtual const SuctionCupFactory& suctionCupFactory() const = 0;
@@ -183,7 +183,7 @@ public:
     }
 };
 
-class ILoabotDeviceFactory final : public ILoabotFactory {
+class iLoabotDeviceFactory final : public iLoabotFactory {
 public:
     const RobotFactory& robotFactory() const override { return robotFactory_; }
     const AGVFactory& agvFactory() const override { return agvFactory_; }
@@ -204,7 +204,7 @@ private:
 };
 
 int main() {
-    ILoabotDeviceFactory iLoabot;
+    iLoabotDeviceFactory iLoabot;
 
     std::vector<std::string> devices;
     devices.push_back(iLoabot.robotFactory().create()->name());
