@@ -206,11 +206,8 @@ private:
 int main() {
     ILoabotDeviceFactory iLoabot;
 
-    std::vector<std::unique_ptr<Robot>> robots;
-    robots.push_back(iLoabot.robotFactory().create());
-
     std::vector<std::string> devices;
-    devices.push_back(robots.front()->name());
+    devices.push_back(iLoabot.robotFactory().create()->name());
     devices.push_back(iLoabot.agvFactory().create()->name());
     devices.push_back(iLoabot.suctionCupFactory().create()->name());
     devices.push_back(iLoabot.batteryFactory().create()->name());
