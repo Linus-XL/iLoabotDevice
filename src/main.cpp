@@ -21,6 +21,7 @@ int main() {
             std::cout << device->name() << '\n';
         }
     }
-
+    auto device = factory.create("SuctionCup");
+    
     return 0;
 }
