@@ -1,7 +1,9 @@
 #include "iloabot/devices/suction_cup.h"
 
-std::string ILoabotSuctionCup::name() const { return "iLoabot SuctionCup"; }
+ILoabotSuctionCup::ILoabotSuctionCup(std::string model) : model_(std::move(model)) {}
+
 std::string ILoabotSuctionCup::type() const { return "SuctionCup"; }
+std::string ILoabotSuctionCup::model() const { return model_; }
 
 bool ILoabotSuctionCup::initialize() {
     status_ = DeviceStatus::Idle;

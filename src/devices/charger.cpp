@@ -1,7 +1,9 @@
 #include "iloabot/devices/charger.h"
 
-std::string ILoabotCharger::name() const { return "iLoabot Charger"; }
+ILoabotCharger::ILoabotCharger(std::string model) : model_(std::move(model)) {}
+
 std::string ILoabotCharger::type() const { return "Charger"; }
+std::string ILoabotCharger::model() const { return model_; }
 
 bool ILoabotCharger::initialize() {
     status_ = DeviceStatus::Idle;

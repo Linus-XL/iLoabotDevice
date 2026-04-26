@@ -1,7 +1,9 @@
 #include "iloabot/devices/light.h"
 
-std::string ILoabotLight::name() const { return "iLoabot Light"; }
+ILoabotLight::ILoabotLight(std::string model) : model_(std::move(model)) {}
+
 std::string ILoabotLight::type() const { return "Light"; }
+std::string ILoabotLight::model() const { return model_; }
 
 void ILoabotLight::turnOn() { on_ = true; }
 void ILoabotLight::turnOff() { on_ = false; }

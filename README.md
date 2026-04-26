@@ -1,15 +1,15 @@
 # iLoabotDevice
 设备控制驱动器。
 
-该项目基于 C++17，采用“注册型工厂 + 设备能力接口 + 通信协议抽象”的结构，用于管理 iLoabot 系列设备，并为后续接入真实控制链路预留统一扩展点。通信层优先基于 Boost.Asio 实现，以满足 Linux / Windows 等平台的可移植性要求。
+该项目基于 C++17，采用“Device 抽象工厂 + 产品工厂注册器 + 设备能力接口 + 通信协议抽象”的结构，用于管理 iLoabot 系列设备，并为后续接入真实控制链路预留统一扩展点。通信层优先基于 Boost.Asio 实现，以满足 Linux / Windows 等平台的可移植性要求。
 
 ## 架构概览
 
 项目分为 4 层：
 
-1. 设备抽象层：定义所有设备共享的基础能力，例如名称、类型。
-2. 能力接口层：把运动、开关、电源、配置、状态等能力拆分为可复用接口，避免巨型基类。
-3. 设备实现层：不同设备按需组合能力接口，实现自己的业务行为。
+1. 抽象工厂层：`Device` 负责协调多个产品工厂，按型号装配出完整设备。
+2. 产品接口层：`DeviceProduct` 定义所有产品共享的名称、类型、型号接口。
+3. 产品实现层：每个产品族都按“产品接口 + 多个具体产品 + 一个产品工厂”组织具体行为。
 4. 通信协议层：提供串口、TCP Client、TCP Server、Socket 等通用通信封装，便于设备接入真实硬件或上位机。
 
 ## 项目结构
@@ -19,8 +19,18 @@ iLoabotDevice/
 ├── CMakeLists.txt
 ├── README.md
 ├── include/iloabot/
-│   ├── device.h                     # Device 基类
-│   ├── device_factory.h             # 注册型工厂
+│   ├── device.h                     # Device 抽象工厂与装配结果
+│   ├── device_product.h             # 产品基类
+│   ├── device_types.h               # 共用类型（DeviceStatus、Position）
+│   ├── product_factory.h            # 产品工厂基类与工厂注册器
+│   ├── factories/                   # 具体工厂声明
+│   │   ├── robot_factory.h
+│   │   ├── agv_factory.h
+│   │   ├── suction_cup_factory.h
+│   │   ├── battery_factory.h
+│   │   ├── charger_factory.h
+│   │   ├── light_factory.h
+│   │   └── plc_factory.h
 │   ├── interfaces/                  # 通用控制接口
 │   │   ├── controllable.h           # 初始化/关闭/重置
 │   │   ├── status_provider.h        # 状态查询
@@ -28,14 +38,22 @@ iLoabotDevice/
 │   │   ├── movable.h                # 运动控制
 │   │   ├── switchable.h             # 开关控制
 │   │   └── power_manageable.h       # 电源管理
-│   ├── devices/                     # 具体设备声明
-│   │   ├── robot.h
-│   │   ├── agv.h
-│   │   ├── suction_cup.h
-│   │   ├── battery.h
-│   │   ├── charger.h
-│   │   ├── light.h
-│   │   └── plc.h
+│   ├── devices/                     # 产品接口、具体产品与具体抽象工厂声明
+│   │   ├── robot.h                  # ILoabotRobot 产品接口
+│   │   ├── robot002.h
+│   │   ├── agv.h                    # ILoabotAGV 产品接口
+│   │   ├── agv002.h
+│   │   ├── suction_cup.h            # ILoabotSuctionCup 产品接口
+│   │   ├── suction_cup002.h
+│   │   ├── battery.h                # ILoabotBattery 产品接口
+│   │   ├── battery002.h
+│   │   ├── charger.h                # ILoabotCharger 产品接口
+│   │   ├── charger002.h
+│   │   ├── light.h                  # ILoabotLight 产品接口
+│   │   ├── light002.h
+│   │   ├── plc.h                    # ILoabotPLC 产品接口
+│   │   ├── plc002.h
+│   │   └── iloabot_device.h
 │   └── comm/                        # 通信协议抽象
 │       ├── connection.h             # 通用连接接口
 │       ├── socket.h                 # Boost.Asio Socket 封装
@@ -44,15 +62,31 @@ iLoabotDevice/
 │       └── tcp_server.h             # TCP 服务端
 └── src/
     ├── main.cpp
-    ├── device_factory.cpp
-    ├── devices/                     # 设备实现
+    ├── product_factory.cpp          # 工厂注册器实现
+    ├── factories/                   # 具体工厂实现
+    │   ├── robot_factory.cpp
+    │   ├── agv_factory.cpp
+    │   ├── suction_cup_factory.cpp
+    │   ├── battery_factory.cpp
+    │   ├── charger_factory.cpp
+    │   ├── light_factory.cpp
+    │   └── plc_factory.cpp
+    ├── devices/                     # 产品与抽象工厂实现
     │   ├── robot.cpp
+    │   ├── robot002.cpp
     │   ├── agv.cpp
+    │   ├── agv002.cpp
     │   ├── suction_cup.cpp
+    │   ├── suction_cup002.cpp
     │   ├── battery.cpp
+    │   ├── battery002.cpp
     │   ├── charger.cpp
+    │   ├── charger002.cpp
     │   ├── light.cpp
-    │   └── plc.cpp
+    │   ├── light002.cpp
+    │   ├── plc.cpp
+    │   ├── plc002.cpp
+    │   └── iloabot_device.cpp
     └── comm/                        # 通信实现
         ├── socket.cpp
         ├── serial_port.cpp
@@ -62,39 +96,68 @@ iLoabotDevice/
 
 ## 核心设计
 
-### 1. 设备基类
+### 1. Device 抽象工厂
 
-所有设备统一继承 `Device`，对外暴露：
+`Device` 不再表示某个具体产品，而是表示“设备装配器”。
 
-- `name()`：设备名称
-- `type()`：设备类型
+它负责：
 
-这样可以通过统一容器和统一工厂管理不同设备实例。
+- 接收一份装配规格 `DeviceBuildSpec`
+- 调用不同产品工厂按型号生产产品
+- 把这些产品组装进 `AssembledDevice`
 
-### 2. 能力接口拆分
+这样 `Device` 关注的是“如何组装一台设备”，而不是“某个产品本身的行为”。
 
-不同设备不是继承一个庞大的总接口，而是按能力组合：
+### 2. 产品基类
 
-- `Controllable`：启动、关闭、重置
-- `StatusProvider`：状态查询
-- `Movable`：位置控制
-- `Switchable`：开关控制
-- `Configurable`：参数配置
-- `PowerManageable`：电源状态
+所有具体产品统一继承 `DeviceProduct`，对外暴露：
 
-这种设计更贴合设备建模，也更方便后续扩展新的设备类型。
+- `name()`：产品名称
+- `type()`：产品族类型
+- `model()`：产品型号
 
-### 3. 注册型工厂
+### 3. 产品接口按产品划分
 
-`DeviceFactory` 使用注册机制维护“设备类型 -> 创建设备对象”的映射。
+每个产品族对外暴露一个独立的产品接口，调用方只需包含对应的产品头文件，即可使用该产品的全部方法：
+
+| 产品接口 | 方法 |
+|---|---|
+| `ILoabotRobot` | `initialize / shutdown / reset / status / moveTo / stop / currentPosition` |
+| `ILoabotAGV` | `initialize / shutdown / reset / status / moveTo / stop / currentPosition` |
+| `ILoabotSuctionCup` | `initialize / shutdown / reset / status / turnOn / turnOff / isOn` |
+| `ILoabotBattery` | `status / batteryLevel / isCharging` |
+| `ILoabotCharger` | `initialize / shutdown / reset / status / turnOn / turnOff / isOn` |
+| `ILoabotLight` | `turnOn / turnOff / isOn` |
+| `ILoabotPLC` | `initialize / shutdown / reset / status / setParam / getParam` |
+
+不再使用 `Controllable`、`Movable`、`Switchable` 等横切功能 mixin，接口边界以产品为单位。
+
+### 4. 产品工厂 + 注册器
+
+`iloabot::factories::ProductFactory` 是产品工厂抽象基类；`RobotFactory`、`AGVFactory`、`SuctionCupFactory` 等具体工厂负责各自产品族的生产。
+
+每个工厂都支持：
+
+- 返回自己支持的型号列表 `supportedModels()`
+- 给出默认型号 `defaultModel()`
+- 按型号创建产品 `create(model)`
+
+`ProductFactoryRegistry` 负责维护“产品族类型 -> 具体工厂”的映射，并统一提供按类型、按工厂类型、按产品类型的查找与创建入口。
+
+约定：
+
+- 每个具体工厂都继承 `TypedProductFactory<ProductT>`，并显式声明 `using ProductType = ProductT`。
+- `ProductType` 必须是 `DeviceProduct` 的子类，用于统一生成产品类型索引，支持按具体产品类型创建。
+- 这样新增工厂时无需手写 `productTypeKey()`，避免重复代码和映射不一致。
+- 如果同一产品族下存在多个实现，例如 `SuctionCup`、`SuctionCup002`，则由同一个产品工厂根据型号选择返回哪一个具体产品实现。
 
 优势：
 
-- 新增设备时不需要修改工厂接口定义
-- 避免为每种设备单独维护一组 Factory 类
-- 降低模板代码和耦合度
+- `Device` 和 `Factory` 职责分离：前者负责组装，后者负责生产
+- 每个工厂都可以生产同一产品族下的不同型号
+- 便于后续在工厂层注入默认配置、连接参数或初始化策略
 
-### 4. 通信协议抽象
+### 5. 通信协议抽象
 
 通信层从设备层中独立出来，便于复用与替换：
 
@@ -106,9 +169,9 @@ iLoabotDevice/
 
 后续如果要增加 UDP、Modbus、CAN、WebSocket，也可以沿用当前模式继续扩展。
 
-## 设备与接口映射
+## 设备方法一览
 
-| 设备 | Controllable | StatusProvider | Movable | Switchable | Configurable | PowerManageable |
+| 设备 | 控制 | 状态 | 运动 | 开关 | 参数 | 电源 |
 |------|:---:|:---:|:---:|:---:|:---:|:---:|
 | Robot | ✓ | ✓ | ✓ |  |  |  |
 | AGV | ✓ | ✓ | ✓ |  |  |  |
@@ -147,13 +210,30 @@ iLoabotDevice/
 
 ## 扩展方式
 
-### 新增一个设备
+### 新增一个产品族
 
-1. 在 `include/iloabot/devices/` 中新增头文件。
-2. 继承 `Device` 和所需能力接口。
-3. 在 `src/devices/` 中实现对应方法。
-4. 在 `src/device_factory.cpp` 中注册新设备。
-5. 在 `CMakeLists.txt` 中加入对应源文件。
+1. 在 `include/iloabot/devices/` 中新增产品接口头文件，继承 `DeviceProduct` 和所需能力接口。
+2. 为该产品族新增一个或多个具体产品头文件，例如 `*002.h`。
+3. 在 `src/devices/` 中实现共享基类逻辑和各个具体产品逻辑。
+4. 在 `include/iloabot/factories/` 中新增对应工厂，继承 `TypedProductFactory<ProductT>`。
+5. 在工厂中实现 `supportedModels()`、`defaultModel()` 和 `create(model)`，由工厂根据型号选择具体实现。
+6. 在 `src/product_factory.cpp` 中注册该工厂。
+7. 在 `CMakeLists.txt` 中加入对应源文件。
+
+以吸盘为例：
+
+- `suction_cup.h` 只定义产品接口 `ILoabotSuctionCup`
+- `suction_cup002.h` 声明具体产品
+- `suction_cup.cpp` 实现共享逻辑
+- `suction_cup002.cpp` 实现第二个具体产品
+- `SuctionCupFactory` 根据 `SC-200` 等型号决定返回哪个具体实现
+
+### 新增一个抽象工厂设备
+
+1. 在 `include/iloabot/devices/` 中新增设备装配器头文件，继承 `Device`。
+2. 在 `src/devices/` 中实现 `assemble(const DeviceBuildSpec&)`。
+3. 在装配函数里通过 `ProductFactoryRegistry` 调用不同产品工厂。
+4. 把产出的产品加入 `AssembledDevice`。
 
 ### 新增一个通信协议
 
@@ -165,17 +245,56 @@ iLoabotDevice/
 
 ## 使用示例
 
-### 创建设备
+### 组装设备
 
 ```cpp
-registerILoabotDevices();
+iloabot::factories::registerILoabotProductFactories();
 
-auto& factory = DeviceFactory::instance();
-auto robot = factory.create("Robot");
+auto& registry = iloabot::factories::ProductFactoryRegistry::instance();
+ILoabotDevice device(registry);
+DeviceBuildSpec spec;
+spec.robotModel = "R-200";
+spec.suctionCupModel = "SC-200";
 
-if (robot) {
-    std::cout << robot->name() << std::endl;
+auto assembled = device.assemble(spec);
+for (const auto& product : assembled->products()) {
+    if (product) {
+        std::cout << product->type() << " / " << product->model() << std::endl;
+    }
 }
+```
+
+### 使用具体工厂按型号生产
+
+```cpp
+#include "iloabot/factories/suction_cup_factory.h"
+
+iloabot::factories::SuctionCupFactory factory;
+auto suctionCup = factory.createAs<ILoabotSuctionCup>("SC-200");
+
+if (suctionCup) {
+    suctionCup->initialize();
+    suctionCup->turnOn();
+}
+```
+
+### 通过注册器按类型创建
+
+```cpp
+auto& registry = iloabot::factories::ProductFactoryRegistry::instance();
+
+// 按具体工厂类型创建具体产品
+auto byFactory = registry.createByFactoryAs<
+    iloabot::factories::SuctionCupFactory,
+    ILoabotSuctionCup>("SC-200");
+
+// 按具体产品类型创建
+auto byProduct = registry.createByProduct<ILoabotSuctionCup>("SC-200");
+
+// 生命周期管理
+registry.unregisterFactory("SuctionCup");
+registry.unregisterFactoryByType<iloabot::factories::SuctionCupFactory>();
+registry.clear();
 ```
 
 ### 使用 TCP 客户端

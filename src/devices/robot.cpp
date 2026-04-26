@@ -1,7 +1,9 @@
 #include "iloabot/devices/robot.h"
 
-std::string ILoabotRobot::name() const { return "iLoabot Robot"; }
+ILoabotRobot::ILoabotRobot(std::string model) : model_(std::move(model)) {}
+
 std::string ILoabotRobot::type() const { return "Robot"; }
+std::string ILoabotRobot::model() const { return model_; }
 
 bool ILoabotRobot::initialize() {
     status_ = DeviceStatus::Idle;

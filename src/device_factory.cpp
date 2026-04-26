@@ -1,38 +1,108 @@
 #include "iloabot/device_factory.h"
 
-#include "iloabot/devices/robot.h"
-#include "iloabot/devices/agv.h"
-#include "iloabot/devices/suction_cup.h"
-#include "iloabot/devices/battery.h"
-#include "iloabot/devices/charger.h"
-#include "iloabot/devices/light.h"
-#include "iloabot/devices/plc.h"
+#include "iloabot/factories/agv_factory.h"
+#include "iloabot/factories/battery_factory.h"
+#include "iloabot/factories/charger_factory.h"
+#include "iloabot/factories/light_factory.h"
+#include "iloabot/factories/plc_factory.h"
+#include "iloabot/factories/robot_factory.h"
+#include "iloabot/factories/suction_cup_factory.h"
 
-DeviceFactory& DeviceFactory::instance() {
-    static DeviceFactory factory;
-    return factory;
-}
+namespace iloabot::factories {
 
-void DeviceFactory::registerDevice(const std::string& typeName, Creator creator) {
-    creators_[typeName] = std::move(creator);
-}
+namespace {
 
-std::unique_ptr<Device> DeviceFactory::create(const std::string& typeName) const {
-    auto it = creators_.find(typeName);
-    if (it != creators_.end()) {
-        return it->second();
+void eraseProductIfMatches(
+    std::unordered_map<std::type_index, const ProductFactory*>& productFactories,
+    std::type_index key,
+    const ProductFactory* expected) {
+    auto it = productFactories.find(key);
+    if (it != productFactories.end() && it->second == expected) {
+        productFactories.erase(it);
     }
-    std::cerr << "Unknown device type: " << typeName << "\n";
+}
+
+void eraseFactoryTypeIfMatches(
+    std::unordered_map<std::type_index, const ProductFactory*>& factoryTypeFactories,
+    std::type_index key,
+    const ProductFactory* expected) {
+    auto it = factoryTypeFactories.find(key);
+    if (it != factoryTypeFactories.end() && it->second == expected) {
+        factoryTypeFactories.erase(it);
+    }
+}
+
+} // namespace
+
+ProductFactoryRegistry& ProductFactoryRegistry::instance() {
+    static ProductFactoryRegistry registry;
+    return registry;
+}
+
+void ProductFactoryRegistry::registerFactory(std::unique_ptr<ProductFactory> factory) {
+    const auto key = factory->typeName();
+    const auto productKey = factory->productTypeKey();
+    const auto factoryTypeKey = std::type_index(typeid(*factory));
+
+    if (auto it = factories_.find(key); it != factories_.end()) {
+        const auto* oldFactory = it->second.get();
+        eraseProductIfMatches(productFactories_, oldFactory->productTypeKey(), oldFactory);
+        eraseFactoryTypeIfMatches(factoryTypeFactories_, std::type_index(typeid(*oldFactory)), oldFactory);
+    }
+
+    factories_[key] = std::move(factory);
+    productFactories_[productKey] = factories_[key].get();
+    factoryTypeFactories_[factoryTypeKey] = factories_[key].get();
+}
+
+bool ProductFactoryRegistry::unregisterFactory(const std::string& typeName) {
+    auto it = factories_.find(typeName);
+    if (it == factories_.end()) {
+        return false;
+    }
+
+    const auto* factory = it->second.get();
+    eraseProductIfMatches(productFactories_, factory->productTypeKey(), factory);
+    eraseFactoryTypeIfMatches(factoryTypeFactories_, std::type_index(typeid(*factory)), factory);
+    factories_.erase(it);
+    return true;
+}
+
+void ProductFactoryRegistry::clear() {
+    factories_.clear();
+    productFactories_.clear();
+    factoryTypeFactories_.clear();
+}
+
+const ProductFactory* ProductFactoryRegistry::findFactory(const std::string& typeName) const {
+    auto it = factories_.find(typeName);
+    if (it != factories_.end()) {
+        return it->second.get();
+    }
     return nullptr;
 }
 
-void registerILoabotDevices() {
-    auto& factory = DeviceFactory::instance();
-    factory.registerDevice("Robot",      [] { return std::make_unique<ILoabotRobot>(); });
-    factory.registerDevice("AGV",        [] { return std::make_unique<ILoabotAGV>(); });
-    factory.registerDevice("SuctionCup", [] { return std::make_unique<ILoabotSuctionCup>(); });
-    factory.registerDevice("Battery",    [] { return std::make_unique<ILoabotBattery>(); });
-    factory.registerDevice("Charger",    [] { return std::make_unique<ILoabotCharger>(); });
-    factory.registerDevice("Light",      [] { return std::make_unique<ILoabotLight>(); });
-    factory.registerDevice("PLC",        [] { return std::make_unique<ILoabotPLC>(); });
+std::unique_ptr<DeviceProduct> ProductFactoryRegistry::create(
+    const std::string& typeName,
+    const std::string& model) const {
+    const auto* factory = findFactory(typeName);
+    if (!factory) {
+        std::cerr << "Unknown device type: " << typeName << "\n";
+        return nullptr;
+    }
+
+    return factory->create(model);
 }
+
+void registerILoabotProductFactories() {
+    auto& registry = ProductFactoryRegistry::instance();
+    registry.registerFactory(std::make_unique<RobotFactory>());
+    registry.registerFactory(std::make_unique<AGVFactory>());
+    registry.registerFactory(std::make_unique<SuctionCupFactory>());
+    registry.registerFactory(std::make_unique<BatteryFactory>());
+    registry.registerFactory(std::make_unique<ChargerFactory>());
+    registry.registerFactory(std::make_unique<LightFactory>());
+    registry.registerFactory(std::make_unique<PLCFactory>());
+}
+
+} // namespace iloabot::factories

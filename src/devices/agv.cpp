@@ -1,7 +1,9 @@
 #include "iloabot/devices/agv.h"
 
-std::string ILoabotAGV::name() const { return "iLoabot AGV"; }
+ILoabotAGV::ILoabotAGV(std::string model) : model_(std::move(model)) {}
+
 std::string ILoabotAGV::type() const { return "AGV"; }
+std::string ILoabotAGV::model() const { return model_; }
 
 bool ILoabotAGV::initialize() {
     status_ = DeviceStatus::Idle;

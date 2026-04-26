@@ -69,24 +69,122 @@ include CMakeFiles/iLoabotDevice.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/iLoabotDevice.dir/flags.make
 
-CMakeFiles/iLoabotDevice.dir/src/device_factory.cpp.o: CMakeFiles/iLoabotDevice.dir/flags.make
-CMakeFiles/iLoabotDevice.dir/src/device_factory.cpp.o: ../src/device_factory.cpp
-CMakeFiles/iLoabotDevice.dir/src/device_factory.cpp.o: CMakeFiles/iLoabotDevice.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/linus/iLoabotDevice/build_debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/iLoabotDevice.dir/src/device_factory.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/iLoabotDevice.dir/src/device_factory.cpp.o -MF CMakeFiles/iLoabotDevice.dir/src/device_factory.cpp.o.d -o CMakeFiles/iLoabotDevice.dir/src/device_factory.cpp.o -c /home/linus/iLoabotDevice/src/device_factory.cpp
+CMakeFiles/iLoabotDevice.dir/src/product_factory.cpp.o: CMakeFiles/iLoabotDevice.dir/flags.make
+CMakeFiles/iLoabotDevice.dir/src/product_factory.cpp.o: ../src/product_factory.cpp
+CMakeFiles/iLoabotDevice.dir/src/product_factory.cpp.o: CMakeFiles/iLoabotDevice.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/linus/iLoabotDevice/build_debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/iLoabotDevice.dir/src/product_factory.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/iLoabotDevice.dir/src/product_factory.cpp.o -MF CMakeFiles/iLoabotDevice.dir/src/product_factory.cpp.o.d -o CMakeFiles/iLoabotDevice.dir/src/product_factory.cpp.o -c /home/linus/iLoabotDevice/src/product_factory.cpp
 
-CMakeFiles/iLoabotDevice.dir/src/device_factory.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/iLoabotDevice.dir/src/device_factory.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/linus/iLoabotDevice/src/device_factory.cpp > CMakeFiles/iLoabotDevice.dir/src/device_factory.cpp.i
+CMakeFiles/iLoabotDevice.dir/src/product_factory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/iLoabotDevice.dir/src/product_factory.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/linus/iLoabotDevice/src/product_factory.cpp > CMakeFiles/iLoabotDevice.dir/src/product_factory.cpp.i
 
-CMakeFiles/iLoabotDevice.dir/src/device_factory.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/iLoabotDevice.dir/src/device_factory.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/linus/iLoabotDevice/src/device_factory.cpp -o CMakeFiles/iLoabotDevice.dir/src/device_factory.cpp.s
+CMakeFiles/iLoabotDevice.dir/src/product_factory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/iLoabotDevice.dir/src/product_factory.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/linus/iLoabotDevice/src/product_factory.cpp -o CMakeFiles/iLoabotDevice.dir/src/product_factory.cpp.s
+
+CMakeFiles/iLoabotDevice.dir/src/factories/robot_factory.cpp.o: CMakeFiles/iLoabotDevice.dir/flags.make
+CMakeFiles/iLoabotDevice.dir/src/factories/robot_factory.cpp.o: ../src/factories/robot_factory.cpp
+CMakeFiles/iLoabotDevice.dir/src/factories/robot_factory.cpp.o: CMakeFiles/iLoabotDevice.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/linus/iLoabotDevice/build_debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/iLoabotDevice.dir/src/factories/robot_factory.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/iLoabotDevice.dir/src/factories/robot_factory.cpp.o -MF CMakeFiles/iLoabotDevice.dir/src/factories/robot_factory.cpp.o.d -o CMakeFiles/iLoabotDevice.dir/src/factories/robot_factory.cpp.o -c /home/linus/iLoabotDevice/src/factories/robot_factory.cpp
+
+CMakeFiles/iLoabotDevice.dir/src/factories/robot_factory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/iLoabotDevice.dir/src/factories/robot_factory.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/linus/iLoabotDevice/src/factories/robot_factory.cpp > CMakeFiles/iLoabotDevice.dir/src/factories/robot_factory.cpp.i
+
+CMakeFiles/iLoabotDevice.dir/src/factories/robot_factory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/iLoabotDevice.dir/src/factories/robot_factory.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/linus/iLoabotDevice/src/factories/robot_factory.cpp -o CMakeFiles/iLoabotDevice.dir/src/factories/robot_factory.cpp.s
+
+CMakeFiles/iLoabotDevice.dir/src/factories/agv_factory.cpp.o: CMakeFiles/iLoabotDevice.dir/flags.make
+CMakeFiles/iLoabotDevice.dir/src/factories/agv_factory.cpp.o: ../src/factories/agv_factory.cpp
+CMakeFiles/iLoabotDevice.dir/src/factories/agv_factory.cpp.o: CMakeFiles/iLoabotDevice.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/linus/iLoabotDevice/build_debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/iLoabotDevice.dir/src/factories/agv_factory.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/iLoabotDevice.dir/src/factories/agv_factory.cpp.o -MF CMakeFiles/iLoabotDevice.dir/src/factories/agv_factory.cpp.o.d -o CMakeFiles/iLoabotDevice.dir/src/factories/agv_factory.cpp.o -c /home/linus/iLoabotDevice/src/factories/agv_factory.cpp
+
+CMakeFiles/iLoabotDevice.dir/src/factories/agv_factory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/iLoabotDevice.dir/src/factories/agv_factory.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/linus/iLoabotDevice/src/factories/agv_factory.cpp > CMakeFiles/iLoabotDevice.dir/src/factories/agv_factory.cpp.i
+
+CMakeFiles/iLoabotDevice.dir/src/factories/agv_factory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/iLoabotDevice.dir/src/factories/agv_factory.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/linus/iLoabotDevice/src/factories/agv_factory.cpp -o CMakeFiles/iLoabotDevice.dir/src/factories/agv_factory.cpp.s
+
+CMakeFiles/iLoabotDevice.dir/src/factories/suction_cup_factory.cpp.o: CMakeFiles/iLoabotDevice.dir/flags.make
+CMakeFiles/iLoabotDevice.dir/src/factories/suction_cup_factory.cpp.o: ../src/factories/suction_cup_factory.cpp
+CMakeFiles/iLoabotDevice.dir/src/factories/suction_cup_factory.cpp.o: CMakeFiles/iLoabotDevice.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/linus/iLoabotDevice/build_debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/iLoabotDevice.dir/src/factories/suction_cup_factory.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/iLoabotDevice.dir/src/factories/suction_cup_factory.cpp.o -MF CMakeFiles/iLoabotDevice.dir/src/factories/suction_cup_factory.cpp.o.d -o CMakeFiles/iLoabotDevice.dir/src/factories/suction_cup_factory.cpp.o -c /home/linus/iLoabotDevice/src/factories/suction_cup_factory.cpp
+
+CMakeFiles/iLoabotDevice.dir/src/factories/suction_cup_factory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/iLoabotDevice.dir/src/factories/suction_cup_factory.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/linus/iLoabotDevice/src/factories/suction_cup_factory.cpp > CMakeFiles/iLoabotDevice.dir/src/factories/suction_cup_factory.cpp.i
+
+CMakeFiles/iLoabotDevice.dir/src/factories/suction_cup_factory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/iLoabotDevice.dir/src/factories/suction_cup_factory.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/linus/iLoabotDevice/src/factories/suction_cup_factory.cpp -o CMakeFiles/iLoabotDevice.dir/src/factories/suction_cup_factory.cpp.s
+
+CMakeFiles/iLoabotDevice.dir/src/factories/battery_factory.cpp.o: CMakeFiles/iLoabotDevice.dir/flags.make
+CMakeFiles/iLoabotDevice.dir/src/factories/battery_factory.cpp.o: ../src/factories/battery_factory.cpp
+CMakeFiles/iLoabotDevice.dir/src/factories/battery_factory.cpp.o: CMakeFiles/iLoabotDevice.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/linus/iLoabotDevice/build_debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/iLoabotDevice.dir/src/factories/battery_factory.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/iLoabotDevice.dir/src/factories/battery_factory.cpp.o -MF CMakeFiles/iLoabotDevice.dir/src/factories/battery_factory.cpp.o.d -o CMakeFiles/iLoabotDevice.dir/src/factories/battery_factory.cpp.o -c /home/linus/iLoabotDevice/src/factories/battery_factory.cpp
+
+CMakeFiles/iLoabotDevice.dir/src/factories/battery_factory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/iLoabotDevice.dir/src/factories/battery_factory.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/linus/iLoabotDevice/src/factories/battery_factory.cpp > CMakeFiles/iLoabotDevice.dir/src/factories/battery_factory.cpp.i
+
+CMakeFiles/iLoabotDevice.dir/src/factories/battery_factory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/iLoabotDevice.dir/src/factories/battery_factory.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/linus/iLoabotDevice/src/factories/battery_factory.cpp -o CMakeFiles/iLoabotDevice.dir/src/factories/battery_factory.cpp.s
+
+CMakeFiles/iLoabotDevice.dir/src/factories/charger_factory.cpp.o: CMakeFiles/iLoabotDevice.dir/flags.make
+CMakeFiles/iLoabotDevice.dir/src/factories/charger_factory.cpp.o: ../src/factories/charger_factory.cpp
+CMakeFiles/iLoabotDevice.dir/src/factories/charger_factory.cpp.o: CMakeFiles/iLoabotDevice.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/linus/iLoabotDevice/build_debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/iLoabotDevice.dir/src/factories/charger_factory.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/iLoabotDevice.dir/src/factories/charger_factory.cpp.o -MF CMakeFiles/iLoabotDevice.dir/src/factories/charger_factory.cpp.o.d -o CMakeFiles/iLoabotDevice.dir/src/factories/charger_factory.cpp.o -c /home/linus/iLoabotDevice/src/factories/charger_factory.cpp
+
+CMakeFiles/iLoabotDevice.dir/src/factories/charger_factory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/iLoabotDevice.dir/src/factories/charger_factory.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/linus/iLoabotDevice/src/factories/charger_factory.cpp > CMakeFiles/iLoabotDevice.dir/src/factories/charger_factory.cpp.i
+
+CMakeFiles/iLoabotDevice.dir/src/factories/charger_factory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/iLoabotDevice.dir/src/factories/charger_factory.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/linus/iLoabotDevice/src/factories/charger_factory.cpp -o CMakeFiles/iLoabotDevice.dir/src/factories/charger_factory.cpp.s
+
+CMakeFiles/iLoabotDevice.dir/src/factories/light_factory.cpp.o: CMakeFiles/iLoabotDevice.dir/flags.make
+CMakeFiles/iLoabotDevice.dir/src/factories/light_factory.cpp.o: ../src/factories/light_factory.cpp
+CMakeFiles/iLoabotDevice.dir/src/factories/light_factory.cpp.o: CMakeFiles/iLoabotDevice.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/linus/iLoabotDevice/build_debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/iLoabotDevice.dir/src/factories/light_factory.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/iLoabotDevice.dir/src/factories/light_factory.cpp.o -MF CMakeFiles/iLoabotDevice.dir/src/factories/light_factory.cpp.o.d -o CMakeFiles/iLoabotDevice.dir/src/factories/light_factory.cpp.o -c /home/linus/iLoabotDevice/src/factories/light_factory.cpp
+
+CMakeFiles/iLoabotDevice.dir/src/factories/light_factory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/iLoabotDevice.dir/src/factories/light_factory.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/linus/iLoabotDevice/src/factories/light_factory.cpp > CMakeFiles/iLoabotDevice.dir/src/factories/light_factory.cpp.i
+
+CMakeFiles/iLoabotDevice.dir/src/factories/light_factory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/iLoabotDevice.dir/src/factories/light_factory.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/linus/iLoabotDevice/src/factories/light_factory.cpp -o CMakeFiles/iLoabotDevice.dir/src/factories/light_factory.cpp.s
+
+CMakeFiles/iLoabotDevice.dir/src/factories/plc_factory.cpp.o: CMakeFiles/iLoabotDevice.dir/flags.make
+CMakeFiles/iLoabotDevice.dir/src/factories/plc_factory.cpp.o: ../src/factories/plc_factory.cpp
+CMakeFiles/iLoabotDevice.dir/src/factories/plc_factory.cpp.o: CMakeFiles/iLoabotDevice.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/linus/iLoabotDevice/build_debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/iLoabotDevice.dir/src/factories/plc_factory.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/iLoabotDevice.dir/src/factories/plc_factory.cpp.o -MF CMakeFiles/iLoabotDevice.dir/src/factories/plc_factory.cpp.o.d -o CMakeFiles/iLoabotDevice.dir/src/factories/plc_factory.cpp.o -c /home/linus/iLoabotDevice/src/factories/plc_factory.cpp
+
+CMakeFiles/iLoabotDevice.dir/src/factories/plc_factory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/iLoabotDevice.dir/src/factories/plc_factory.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/linus/iLoabotDevice/src/factories/plc_factory.cpp > CMakeFiles/iLoabotDevice.dir/src/factories/plc_factory.cpp.i
+
+CMakeFiles/iLoabotDevice.dir/src/factories/plc_factory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/iLoabotDevice.dir/src/factories/plc_factory.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/linus/iLoabotDevice/src/factories/plc_factory.cpp -o CMakeFiles/iLoabotDevice.dir/src/factories/plc_factory.cpp.s
 
 CMakeFiles/iLoabotDevice.dir/src/devices/robot.cpp.o: CMakeFiles/iLoabotDevice.dir/flags.make
 CMakeFiles/iLoabotDevice.dir/src/devices/robot.cpp.o: ../src/devices/robot.cpp
 CMakeFiles/iLoabotDevice.dir/src/devices/robot.cpp.o: CMakeFiles/iLoabotDevice.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/linus/iLoabotDevice/build_debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/iLoabotDevice.dir/src/devices/robot.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/linus/iLoabotDevice/build_debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/iLoabotDevice.dir/src/devices/robot.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/iLoabotDevice.dir/src/devices/robot.cpp.o -MF CMakeFiles/iLoabotDevice.dir/src/devices/robot.cpp.o.d -o CMakeFiles/iLoabotDevice.dir/src/devices/robot.cpp.o -c /home/linus/iLoabotDevice/src/devices/robot.cpp
 
 CMakeFiles/iLoabotDevice.dir/src/devices/robot.cpp.i: cmake_force
@@ -97,10 +195,24 @@ CMakeFiles/iLoabotDevice.dir/src/devices/robot.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/iLoabotDevice.dir/src/devices/robot.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/linus/iLoabotDevice/src/devices/robot.cpp -o CMakeFiles/iLoabotDevice.dir/src/devices/robot.cpp.s
 
+CMakeFiles/iLoabotDevice.dir/src/devices/robot002.cpp.o: CMakeFiles/iLoabotDevice.dir/flags.make
+CMakeFiles/iLoabotDevice.dir/src/devices/robot002.cpp.o: ../src/devices/robot002.cpp
+CMakeFiles/iLoabotDevice.dir/src/devices/robot002.cpp.o: CMakeFiles/iLoabotDevice.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/linus/iLoabotDevice/build_debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/iLoabotDevice.dir/src/devices/robot002.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/iLoabotDevice.dir/src/devices/robot002.cpp.o -MF CMakeFiles/iLoabotDevice.dir/src/devices/robot002.cpp.o.d -o CMakeFiles/iLoabotDevice.dir/src/devices/robot002.cpp.o -c /home/linus/iLoabotDevice/src/devices/robot002.cpp
+
+CMakeFiles/iLoabotDevice.dir/src/devices/robot002.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/iLoabotDevice.dir/src/devices/robot002.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/linus/iLoabotDevice/src/devices/robot002.cpp > CMakeFiles/iLoabotDevice.dir/src/devices/robot002.cpp.i
+
+CMakeFiles/iLoabotDevice.dir/src/devices/robot002.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/iLoabotDevice.dir/src/devices/robot002.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/linus/iLoabotDevice/src/devices/robot002.cpp -o CMakeFiles/iLoabotDevice.dir/src/devices/robot002.cpp.s
+
 CMakeFiles/iLoabotDevice.dir/src/devices/agv.cpp.o: CMakeFiles/iLoabotDevice.dir/flags.make
 CMakeFiles/iLoabotDevice.dir/src/devices/agv.cpp.o: ../src/devices/agv.cpp
 CMakeFiles/iLoabotDevice.dir/src/devices/agv.cpp.o: CMakeFiles/iLoabotDevice.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/linus/iLoabotDevice/build_debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/iLoabotDevice.dir/src/devices/agv.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/linus/iLoabotDevice/build_debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/iLoabotDevice.dir/src/devices/agv.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/iLoabotDevice.dir/src/devices/agv.cpp.o -MF CMakeFiles/iLoabotDevice.dir/src/devices/agv.cpp.o.d -o CMakeFiles/iLoabotDevice.dir/src/devices/agv.cpp.o -c /home/linus/iLoabotDevice/src/devices/agv.cpp
 
 CMakeFiles/iLoabotDevice.dir/src/devices/agv.cpp.i: cmake_force
@@ -111,10 +223,24 @@ CMakeFiles/iLoabotDevice.dir/src/devices/agv.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/iLoabotDevice.dir/src/devices/agv.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/linus/iLoabotDevice/src/devices/agv.cpp -o CMakeFiles/iLoabotDevice.dir/src/devices/agv.cpp.s
 
+CMakeFiles/iLoabotDevice.dir/src/devices/agv002.cpp.o: CMakeFiles/iLoabotDevice.dir/flags.make
+CMakeFiles/iLoabotDevice.dir/src/devices/agv002.cpp.o: ../src/devices/agv002.cpp
+CMakeFiles/iLoabotDevice.dir/src/devices/agv002.cpp.o: CMakeFiles/iLoabotDevice.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/linus/iLoabotDevice/build_debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/iLoabotDevice.dir/src/devices/agv002.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/iLoabotDevice.dir/src/devices/agv002.cpp.o -MF CMakeFiles/iLoabotDevice.dir/src/devices/agv002.cpp.o.d -o CMakeFiles/iLoabotDevice.dir/src/devices/agv002.cpp.o -c /home/linus/iLoabotDevice/src/devices/agv002.cpp
+
+CMakeFiles/iLoabotDevice.dir/src/devices/agv002.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/iLoabotDevice.dir/src/devices/agv002.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/linus/iLoabotDevice/src/devices/agv002.cpp > CMakeFiles/iLoabotDevice.dir/src/devices/agv002.cpp.i
+
+CMakeFiles/iLoabotDevice.dir/src/devices/agv002.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/iLoabotDevice.dir/src/devices/agv002.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/linus/iLoabotDevice/src/devices/agv002.cpp -o CMakeFiles/iLoabotDevice.dir/src/devices/agv002.cpp.s
+
 CMakeFiles/iLoabotDevice.dir/src/devices/suction_cup.cpp.o: CMakeFiles/iLoabotDevice.dir/flags.make
 CMakeFiles/iLoabotDevice.dir/src/devices/suction_cup.cpp.o: ../src/devices/suction_cup.cpp
 CMakeFiles/iLoabotDevice.dir/src/devices/suction_cup.cpp.o: CMakeFiles/iLoabotDevice.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/linus/iLoabotDevice/build_debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/iLoabotDevice.dir/src/devices/suction_cup.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/linus/iLoabotDevice/build_debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/iLoabotDevice.dir/src/devices/suction_cup.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/iLoabotDevice.dir/src/devices/suction_cup.cpp.o -MF CMakeFiles/iLoabotDevice.dir/src/devices/suction_cup.cpp.o.d -o CMakeFiles/iLoabotDevice.dir/src/devices/suction_cup.cpp.o -c /home/linus/iLoabotDevice/src/devices/suction_cup.cpp
 
 CMakeFiles/iLoabotDevice.dir/src/devices/suction_cup.cpp.i: cmake_force
@@ -125,10 +251,24 @@ CMakeFiles/iLoabotDevice.dir/src/devices/suction_cup.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/iLoabotDevice.dir/src/devices/suction_cup.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/linus/iLoabotDevice/src/devices/suction_cup.cpp -o CMakeFiles/iLoabotDevice.dir/src/devices/suction_cup.cpp.s
 
+CMakeFiles/iLoabotDevice.dir/src/devices/suction_cup002.cpp.o: CMakeFiles/iLoabotDevice.dir/flags.make
+CMakeFiles/iLoabotDevice.dir/src/devices/suction_cup002.cpp.o: ../src/devices/suction_cup002.cpp
+CMakeFiles/iLoabotDevice.dir/src/devices/suction_cup002.cpp.o: CMakeFiles/iLoabotDevice.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/linus/iLoabotDevice/build_debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/iLoabotDevice.dir/src/devices/suction_cup002.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/iLoabotDevice.dir/src/devices/suction_cup002.cpp.o -MF CMakeFiles/iLoabotDevice.dir/src/devices/suction_cup002.cpp.o.d -o CMakeFiles/iLoabotDevice.dir/src/devices/suction_cup002.cpp.o -c /home/linus/iLoabotDevice/src/devices/suction_cup002.cpp
+
+CMakeFiles/iLoabotDevice.dir/src/devices/suction_cup002.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/iLoabotDevice.dir/src/devices/suction_cup002.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/linus/iLoabotDevice/src/devices/suction_cup002.cpp > CMakeFiles/iLoabotDevice.dir/src/devices/suction_cup002.cpp.i
+
+CMakeFiles/iLoabotDevice.dir/src/devices/suction_cup002.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/iLoabotDevice.dir/src/devices/suction_cup002.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/linus/iLoabotDevice/src/devices/suction_cup002.cpp -o CMakeFiles/iLoabotDevice.dir/src/devices/suction_cup002.cpp.s
+
 CMakeFiles/iLoabotDevice.dir/src/devices/battery.cpp.o: CMakeFiles/iLoabotDevice.dir/flags.make
 CMakeFiles/iLoabotDevice.dir/src/devices/battery.cpp.o: ../src/devices/battery.cpp
 CMakeFiles/iLoabotDevice.dir/src/devices/battery.cpp.o: CMakeFiles/iLoabotDevice.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/linus/iLoabotDevice/build_debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/iLoabotDevice.dir/src/devices/battery.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/linus/iLoabotDevice/build_debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/iLoabotDevice.dir/src/devices/battery.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/iLoabotDevice.dir/src/devices/battery.cpp.o -MF CMakeFiles/iLoabotDevice.dir/src/devices/battery.cpp.o.d -o CMakeFiles/iLoabotDevice.dir/src/devices/battery.cpp.o -c /home/linus/iLoabotDevice/src/devices/battery.cpp
 
 CMakeFiles/iLoabotDevice.dir/src/devices/battery.cpp.i: cmake_force
@@ -139,10 +279,24 @@ CMakeFiles/iLoabotDevice.dir/src/devices/battery.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/iLoabotDevice.dir/src/devices/battery.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/linus/iLoabotDevice/src/devices/battery.cpp -o CMakeFiles/iLoabotDevice.dir/src/devices/battery.cpp.s
 
+CMakeFiles/iLoabotDevice.dir/src/devices/battery002.cpp.o: CMakeFiles/iLoabotDevice.dir/flags.make
+CMakeFiles/iLoabotDevice.dir/src/devices/battery002.cpp.o: ../src/devices/battery002.cpp
+CMakeFiles/iLoabotDevice.dir/src/devices/battery002.cpp.o: CMakeFiles/iLoabotDevice.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/linus/iLoabotDevice/build_debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/iLoabotDevice.dir/src/devices/battery002.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/iLoabotDevice.dir/src/devices/battery002.cpp.o -MF CMakeFiles/iLoabotDevice.dir/src/devices/battery002.cpp.o.d -o CMakeFiles/iLoabotDevice.dir/src/devices/battery002.cpp.o -c /home/linus/iLoabotDevice/src/devices/battery002.cpp
+
+CMakeFiles/iLoabotDevice.dir/src/devices/battery002.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/iLoabotDevice.dir/src/devices/battery002.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/linus/iLoabotDevice/src/devices/battery002.cpp > CMakeFiles/iLoabotDevice.dir/src/devices/battery002.cpp.i
+
+CMakeFiles/iLoabotDevice.dir/src/devices/battery002.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/iLoabotDevice.dir/src/devices/battery002.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/linus/iLoabotDevice/src/devices/battery002.cpp -o CMakeFiles/iLoabotDevice.dir/src/devices/battery002.cpp.s
+
 CMakeFiles/iLoabotDevice.dir/src/devices/charger.cpp.o: CMakeFiles/iLoabotDevice.dir/flags.make
 CMakeFiles/iLoabotDevice.dir/src/devices/charger.cpp.o: ../src/devices/charger.cpp
 CMakeFiles/iLoabotDevice.dir/src/devices/charger.cpp.o: CMakeFiles/iLoabotDevice.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/linus/iLoabotDevice/build_debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/iLoabotDevice.dir/src/devices/charger.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/linus/iLoabotDevice/build_debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/iLoabotDevice.dir/src/devices/charger.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/iLoabotDevice.dir/src/devices/charger.cpp.o -MF CMakeFiles/iLoabotDevice.dir/src/devices/charger.cpp.o.d -o CMakeFiles/iLoabotDevice.dir/src/devices/charger.cpp.o -c /home/linus/iLoabotDevice/src/devices/charger.cpp
 
 CMakeFiles/iLoabotDevice.dir/src/devices/charger.cpp.i: cmake_force
@@ -153,10 +307,24 @@ CMakeFiles/iLoabotDevice.dir/src/devices/charger.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/iLoabotDevice.dir/src/devices/charger.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/linus/iLoabotDevice/src/devices/charger.cpp -o CMakeFiles/iLoabotDevice.dir/src/devices/charger.cpp.s
 
+CMakeFiles/iLoabotDevice.dir/src/devices/charger002.cpp.o: CMakeFiles/iLoabotDevice.dir/flags.make
+CMakeFiles/iLoabotDevice.dir/src/devices/charger002.cpp.o: ../src/devices/charger002.cpp
+CMakeFiles/iLoabotDevice.dir/src/devices/charger002.cpp.o: CMakeFiles/iLoabotDevice.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/linus/iLoabotDevice/build_debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/iLoabotDevice.dir/src/devices/charger002.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/iLoabotDevice.dir/src/devices/charger002.cpp.o -MF CMakeFiles/iLoabotDevice.dir/src/devices/charger002.cpp.o.d -o CMakeFiles/iLoabotDevice.dir/src/devices/charger002.cpp.o -c /home/linus/iLoabotDevice/src/devices/charger002.cpp
+
+CMakeFiles/iLoabotDevice.dir/src/devices/charger002.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/iLoabotDevice.dir/src/devices/charger002.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/linus/iLoabotDevice/src/devices/charger002.cpp > CMakeFiles/iLoabotDevice.dir/src/devices/charger002.cpp.i
+
+CMakeFiles/iLoabotDevice.dir/src/devices/charger002.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/iLoabotDevice.dir/src/devices/charger002.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/linus/iLoabotDevice/src/devices/charger002.cpp -o CMakeFiles/iLoabotDevice.dir/src/devices/charger002.cpp.s
+
 CMakeFiles/iLoabotDevice.dir/src/devices/light.cpp.o: CMakeFiles/iLoabotDevice.dir/flags.make
 CMakeFiles/iLoabotDevice.dir/src/devices/light.cpp.o: ../src/devices/light.cpp
 CMakeFiles/iLoabotDevice.dir/src/devices/light.cpp.o: CMakeFiles/iLoabotDevice.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/linus/iLoabotDevice/build_debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/iLoabotDevice.dir/src/devices/light.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/linus/iLoabotDevice/build_debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/iLoabotDevice.dir/src/devices/light.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/iLoabotDevice.dir/src/devices/light.cpp.o -MF CMakeFiles/iLoabotDevice.dir/src/devices/light.cpp.o.d -o CMakeFiles/iLoabotDevice.dir/src/devices/light.cpp.o -c /home/linus/iLoabotDevice/src/devices/light.cpp
 
 CMakeFiles/iLoabotDevice.dir/src/devices/light.cpp.i: cmake_force
@@ -167,10 +335,24 @@ CMakeFiles/iLoabotDevice.dir/src/devices/light.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/iLoabotDevice.dir/src/devices/light.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/linus/iLoabotDevice/src/devices/light.cpp -o CMakeFiles/iLoabotDevice.dir/src/devices/light.cpp.s
 
+CMakeFiles/iLoabotDevice.dir/src/devices/light002.cpp.o: CMakeFiles/iLoabotDevice.dir/flags.make
+CMakeFiles/iLoabotDevice.dir/src/devices/light002.cpp.o: ../src/devices/light002.cpp
+CMakeFiles/iLoabotDevice.dir/src/devices/light002.cpp.o: CMakeFiles/iLoabotDevice.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/linus/iLoabotDevice/build_debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/iLoabotDevice.dir/src/devices/light002.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/iLoabotDevice.dir/src/devices/light002.cpp.o -MF CMakeFiles/iLoabotDevice.dir/src/devices/light002.cpp.o.d -o CMakeFiles/iLoabotDevice.dir/src/devices/light002.cpp.o -c /home/linus/iLoabotDevice/src/devices/light002.cpp
+
+CMakeFiles/iLoabotDevice.dir/src/devices/light002.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/iLoabotDevice.dir/src/devices/light002.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/linus/iLoabotDevice/src/devices/light002.cpp > CMakeFiles/iLoabotDevice.dir/src/devices/light002.cpp.i
+
+CMakeFiles/iLoabotDevice.dir/src/devices/light002.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/iLoabotDevice.dir/src/devices/light002.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/linus/iLoabotDevice/src/devices/light002.cpp -o CMakeFiles/iLoabotDevice.dir/src/devices/light002.cpp.s
+
 CMakeFiles/iLoabotDevice.dir/src/devices/plc.cpp.o: CMakeFiles/iLoabotDevice.dir/flags.make
 CMakeFiles/iLoabotDevice.dir/src/devices/plc.cpp.o: ../src/devices/plc.cpp
 CMakeFiles/iLoabotDevice.dir/src/devices/plc.cpp.o: CMakeFiles/iLoabotDevice.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/linus/iLoabotDevice/build_debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/iLoabotDevice.dir/src/devices/plc.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/linus/iLoabotDevice/build_debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/iLoabotDevice.dir/src/devices/plc.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/iLoabotDevice.dir/src/devices/plc.cpp.o -MF CMakeFiles/iLoabotDevice.dir/src/devices/plc.cpp.o.d -o CMakeFiles/iLoabotDevice.dir/src/devices/plc.cpp.o -c /home/linus/iLoabotDevice/src/devices/plc.cpp
 
 CMakeFiles/iLoabotDevice.dir/src/devices/plc.cpp.i: cmake_force
@@ -181,10 +363,38 @@ CMakeFiles/iLoabotDevice.dir/src/devices/plc.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/iLoabotDevice.dir/src/devices/plc.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/linus/iLoabotDevice/src/devices/plc.cpp -o CMakeFiles/iLoabotDevice.dir/src/devices/plc.cpp.s
 
+CMakeFiles/iLoabotDevice.dir/src/devices/plc002.cpp.o: CMakeFiles/iLoabotDevice.dir/flags.make
+CMakeFiles/iLoabotDevice.dir/src/devices/plc002.cpp.o: ../src/devices/plc002.cpp
+CMakeFiles/iLoabotDevice.dir/src/devices/plc002.cpp.o: CMakeFiles/iLoabotDevice.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/linus/iLoabotDevice/build_debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/iLoabotDevice.dir/src/devices/plc002.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/iLoabotDevice.dir/src/devices/plc002.cpp.o -MF CMakeFiles/iLoabotDevice.dir/src/devices/plc002.cpp.o.d -o CMakeFiles/iLoabotDevice.dir/src/devices/plc002.cpp.o -c /home/linus/iLoabotDevice/src/devices/plc002.cpp
+
+CMakeFiles/iLoabotDevice.dir/src/devices/plc002.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/iLoabotDevice.dir/src/devices/plc002.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/linus/iLoabotDevice/src/devices/plc002.cpp > CMakeFiles/iLoabotDevice.dir/src/devices/plc002.cpp.i
+
+CMakeFiles/iLoabotDevice.dir/src/devices/plc002.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/iLoabotDevice.dir/src/devices/plc002.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/linus/iLoabotDevice/src/devices/plc002.cpp -o CMakeFiles/iLoabotDevice.dir/src/devices/plc002.cpp.s
+
+CMakeFiles/iLoabotDevice.dir/src/devices/iloabot_device.cpp.o: CMakeFiles/iLoabotDevice.dir/flags.make
+CMakeFiles/iLoabotDevice.dir/src/devices/iloabot_device.cpp.o: ../src/devices/iloabot_device.cpp
+CMakeFiles/iLoabotDevice.dir/src/devices/iloabot_device.cpp.o: CMakeFiles/iLoabotDevice.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/linus/iLoabotDevice/build_debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/iLoabotDevice.dir/src/devices/iloabot_device.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/iLoabotDevice.dir/src/devices/iloabot_device.cpp.o -MF CMakeFiles/iLoabotDevice.dir/src/devices/iloabot_device.cpp.o.d -o CMakeFiles/iLoabotDevice.dir/src/devices/iloabot_device.cpp.o -c /home/linus/iLoabotDevice/src/devices/iloabot_device.cpp
+
+CMakeFiles/iLoabotDevice.dir/src/devices/iloabot_device.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/iLoabotDevice.dir/src/devices/iloabot_device.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/linus/iLoabotDevice/src/devices/iloabot_device.cpp > CMakeFiles/iLoabotDevice.dir/src/devices/iloabot_device.cpp.i
+
+CMakeFiles/iLoabotDevice.dir/src/devices/iloabot_device.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/iLoabotDevice.dir/src/devices/iloabot_device.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/linus/iLoabotDevice/src/devices/iloabot_device.cpp -o CMakeFiles/iLoabotDevice.dir/src/devices/iloabot_device.cpp.s
+
 CMakeFiles/iLoabotDevice.dir/src/comm/socket.cpp.o: CMakeFiles/iLoabotDevice.dir/flags.make
 CMakeFiles/iLoabotDevice.dir/src/comm/socket.cpp.o: ../src/comm/socket.cpp
 CMakeFiles/iLoabotDevice.dir/src/comm/socket.cpp.o: CMakeFiles/iLoabotDevice.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/linus/iLoabotDevice/build_debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/iLoabotDevice.dir/src/comm/socket.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/linus/iLoabotDevice/build_debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/iLoabotDevice.dir/src/comm/socket.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/iLoabotDevice.dir/src/comm/socket.cpp.o -MF CMakeFiles/iLoabotDevice.dir/src/comm/socket.cpp.o.d -o CMakeFiles/iLoabotDevice.dir/src/comm/socket.cpp.o -c /home/linus/iLoabotDevice/src/comm/socket.cpp
 
 CMakeFiles/iLoabotDevice.dir/src/comm/socket.cpp.i: cmake_force
@@ -198,7 +408,7 @@ CMakeFiles/iLoabotDevice.dir/src/comm/socket.cpp.s: cmake_force
 CMakeFiles/iLoabotDevice.dir/src/comm/serial_port.cpp.o: CMakeFiles/iLoabotDevice.dir/flags.make
 CMakeFiles/iLoabotDevice.dir/src/comm/serial_port.cpp.o: ../src/comm/serial_port.cpp
 CMakeFiles/iLoabotDevice.dir/src/comm/serial_port.cpp.o: CMakeFiles/iLoabotDevice.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/linus/iLoabotDevice/build_debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/iLoabotDevice.dir/src/comm/serial_port.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/linus/iLoabotDevice/build_debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/iLoabotDevice.dir/src/comm/serial_port.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/iLoabotDevice.dir/src/comm/serial_port.cpp.o -MF CMakeFiles/iLoabotDevice.dir/src/comm/serial_port.cpp.o.d -o CMakeFiles/iLoabotDevice.dir/src/comm/serial_port.cpp.o -c /home/linus/iLoabotDevice/src/comm/serial_port.cpp
 
 CMakeFiles/iLoabotDevice.dir/src/comm/serial_port.cpp.i: cmake_force
@@ -212,7 +422,7 @@ CMakeFiles/iLoabotDevice.dir/src/comm/serial_port.cpp.s: cmake_force
 CMakeFiles/iLoabotDevice.dir/src/comm/tcp_client.cpp.o: CMakeFiles/iLoabotDevice.dir/flags.make
 CMakeFiles/iLoabotDevice.dir/src/comm/tcp_client.cpp.o: ../src/comm/tcp_client.cpp
 CMakeFiles/iLoabotDevice.dir/src/comm/tcp_client.cpp.o: CMakeFiles/iLoabotDevice.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/linus/iLoabotDevice/build_debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/iLoabotDevice.dir/src/comm/tcp_client.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/linus/iLoabotDevice/build_debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/iLoabotDevice.dir/src/comm/tcp_client.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/iLoabotDevice.dir/src/comm/tcp_client.cpp.o -MF CMakeFiles/iLoabotDevice.dir/src/comm/tcp_client.cpp.o.d -o CMakeFiles/iLoabotDevice.dir/src/comm/tcp_client.cpp.o -c /home/linus/iLoabotDevice/src/comm/tcp_client.cpp
 
 CMakeFiles/iLoabotDevice.dir/src/comm/tcp_client.cpp.i: cmake_force
@@ -226,7 +436,7 @@ CMakeFiles/iLoabotDevice.dir/src/comm/tcp_client.cpp.s: cmake_force
 CMakeFiles/iLoabotDevice.dir/src/comm/tcp_server.cpp.o: CMakeFiles/iLoabotDevice.dir/flags.make
 CMakeFiles/iLoabotDevice.dir/src/comm/tcp_server.cpp.o: ../src/comm/tcp_server.cpp
 CMakeFiles/iLoabotDevice.dir/src/comm/tcp_server.cpp.o: CMakeFiles/iLoabotDevice.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/linus/iLoabotDevice/build_debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/iLoabotDevice.dir/src/comm/tcp_server.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/linus/iLoabotDevice/build_debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/iLoabotDevice.dir/src/comm/tcp_server.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/iLoabotDevice.dir/src/comm/tcp_server.cpp.o -MF CMakeFiles/iLoabotDevice.dir/src/comm/tcp_server.cpp.o.d -o CMakeFiles/iLoabotDevice.dir/src/comm/tcp_server.cpp.o -c /home/linus/iLoabotDevice/src/comm/tcp_server.cpp
 
 CMakeFiles/iLoabotDevice.dir/src/comm/tcp_server.cpp.i: cmake_force
@@ -239,14 +449,29 @@ CMakeFiles/iLoabotDevice.dir/src/comm/tcp_server.cpp.s: cmake_force
 
 # Object files for target iLoabotDevice
 iLoabotDevice_OBJECTS = \
-"CMakeFiles/iLoabotDevice.dir/src/device_factory.cpp.o" \
+"CMakeFiles/iLoabotDevice.dir/src/product_factory.cpp.o" \
+"CMakeFiles/iLoabotDevice.dir/src/factories/robot_factory.cpp.o" \
+"CMakeFiles/iLoabotDevice.dir/src/factories/agv_factory.cpp.o" \
+"CMakeFiles/iLoabotDevice.dir/src/factories/suction_cup_factory.cpp.o" \
+"CMakeFiles/iLoabotDevice.dir/src/factories/battery_factory.cpp.o" \
+"CMakeFiles/iLoabotDevice.dir/src/factories/charger_factory.cpp.o" \
+"CMakeFiles/iLoabotDevice.dir/src/factories/light_factory.cpp.o" \
+"CMakeFiles/iLoabotDevice.dir/src/factories/plc_factory.cpp.o" \
 "CMakeFiles/iLoabotDevice.dir/src/devices/robot.cpp.o" \
+"CMakeFiles/iLoabotDevice.dir/src/devices/robot002.cpp.o" \
 "CMakeFiles/iLoabotDevice.dir/src/devices/agv.cpp.o" \
+"CMakeFiles/iLoabotDevice.dir/src/devices/agv002.cpp.o" \
 "CMakeFiles/iLoabotDevice.dir/src/devices/suction_cup.cpp.o" \
+"CMakeFiles/iLoabotDevice.dir/src/devices/suction_cup002.cpp.o" \
 "CMakeFiles/iLoabotDevice.dir/src/devices/battery.cpp.o" \
+"CMakeFiles/iLoabotDevice.dir/src/devices/battery002.cpp.o" \
 "CMakeFiles/iLoabotDevice.dir/src/devices/charger.cpp.o" \
+"CMakeFiles/iLoabotDevice.dir/src/devices/charger002.cpp.o" \
 "CMakeFiles/iLoabotDevice.dir/src/devices/light.cpp.o" \
+"CMakeFiles/iLoabotDevice.dir/src/devices/light002.cpp.o" \
 "CMakeFiles/iLoabotDevice.dir/src/devices/plc.cpp.o" \
+"CMakeFiles/iLoabotDevice.dir/src/devices/plc002.cpp.o" \
+"CMakeFiles/iLoabotDevice.dir/src/devices/iloabot_device.cpp.o" \
 "CMakeFiles/iLoabotDevice.dir/src/comm/socket.cpp.o" \
 "CMakeFiles/iLoabotDevice.dir/src/comm/serial_port.cpp.o" \
 "CMakeFiles/iLoabotDevice.dir/src/comm/tcp_client.cpp.o" \
@@ -255,14 +480,29 @@ iLoabotDevice_OBJECTS = \
 # External object files for target iLoabotDevice
 iLoabotDevice_EXTERNAL_OBJECTS =
 
-libiLoabotDevice.so: CMakeFiles/iLoabotDevice.dir/src/device_factory.cpp.o
+libiLoabotDevice.so: CMakeFiles/iLoabotDevice.dir/src/product_factory.cpp.o
+libiLoabotDevice.so: CMakeFiles/iLoabotDevice.dir/src/factories/robot_factory.cpp.o
+libiLoabotDevice.so: CMakeFiles/iLoabotDevice.dir/src/factories/agv_factory.cpp.o
+libiLoabotDevice.so: CMakeFiles/iLoabotDevice.dir/src/factories/suction_cup_factory.cpp.o
+libiLoabotDevice.so: CMakeFiles/iLoabotDevice.dir/src/factories/battery_factory.cpp.o
+libiLoabotDevice.so: CMakeFiles/iLoabotDevice.dir/src/factories/charger_factory.cpp.o
+libiLoabotDevice.so: CMakeFiles/iLoabotDevice.dir/src/factories/light_factory.cpp.o
+libiLoabotDevice.so: CMakeFiles/iLoabotDevice.dir/src/factories/plc_factory.cpp.o
 libiLoabotDevice.so: CMakeFiles/iLoabotDevice.dir/src/devices/robot.cpp.o
+libiLoabotDevice.so: CMakeFiles/iLoabotDevice.dir/src/devices/robot002.cpp.o
 libiLoabotDevice.so: CMakeFiles/iLoabotDevice.dir/src/devices/agv.cpp.o
+libiLoabotDevice.so: CMakeFiles/iLoabotDevice.dir/src/devices/agv002.cpp.o
 libiLoabotDevice.so: CMakeFiles/iLoabotDevice.dir/src/devices/suction_cup.cpp.o
+libiLoabotDevice.so: CMakeFiles/iLoabotDevice.dir/src/devices/suction_cup002.cpp.o
 libiLoabotDevice.so: CMakeFiles/iLoabotDevice.dir/src/devices/battery.cpp.o
+libiLoabotDevice.so: CMakeFiles/iLoabotDevice.dir/src/devices/battery002.cpp.o
 libiLoabotDevice.so: CMakeFiles/iLoabotDevice.dir/src/devices/charger.cpp.o
+libiLoabotDevice.so: CMakeFiles/iLoabotDevice.dir/src/devices/charger002.cpp.o
 libiLoabotDevice.so: CMakeFiles/iLoabotDevice.dir/src/devices/light.cpp.o
+libiLoabotDevice.so: CMakeFiles/iLoabotDevice.dir/src/devices/light002.cpp.o
 libiLoabotDevice.so: CMakeFiles/iLoabotDevice.dir/src/devices/plc.cpp.o
+libiLoabotDevice.so: CMakeFiles/iLoabotDevice.dir/src/devices/plc002.cpp.o
+libiLoabotDevice.so: CMakeFiles/iLoabotDevice.dir/src/devices/iloabot_device.cpp.o
 libiLoabotDevice.so: CMakeFiles/iLoabotDevice.dir/src/comm/socket.cpp.o
 libiLoabotDevice.so: CMakeFiles/iLoabotDevice.dir/src/comm/serial_port.cpp.o
 libiLoabotDevice.so: CMakeFiles/iLoabotDevice.dir/src/comm/tcp_client.cpp.o
@@ -270,7 +510,7 @@ libiLoabotDevice.so: CMakeFiles/iLoabotDevice.dir/src/comm/tcp_server.cpp.o
 libiLoabotDevice.so: CMakeFiles/iLoabotDevice.dir/build.make
 libiLoabotDevice.so: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.74.0
 libiLoabotDevice.so: CMakeFiles/iLoabotDevice.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/linus/iLoabotDevice/build_debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX shared library libiLoabotDevice.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/linus/iLoabotDevice/build_debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Linking CXX shared library libiLoabotDevice.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/iLoabotDevice.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

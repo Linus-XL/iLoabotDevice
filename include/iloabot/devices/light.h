@@ -1,17 +1,23 @@
 #pragma once
 
-#include "iloabot/device.h"
-#include "iloabot/interfaces/switchable.h"
+#include "iloabot/device_product.h"
 
-class ILoabotLight final : public Device, public Switchable {
+class ILoabotLight : public DeviceProduct {
 public:
-    std::string name() const override;
+    explicit ILoabotLight(std::string model = "L-200");
+
+    virtual ~ILoabotLight() = default;
+
+    virtual std::string name() const = 0;
     std::string type() const override;
+    std::string model() const override;
 
-    void turnOn() override;
-    void turnOff() override;
-    bool isOn() const override;
+    // 开关
+    virtual void turnOn();
+    virtual void turnOff();
+    virtual bool isOn() const;
 
-private:
+protected:
+    std::string model_;
     bool on_ = false;
 };

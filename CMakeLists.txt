@@ -8,14 +8,29 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 find_package(Boost REQUIRED COMPONENTS system)
 
 set(ILOABOT_CORE_SOURCES
-    src/device_factory.cpp
+    src/product_factory.cpp
+    src/factories/robot_factory.cpp
+    src/factories/agv_factory.cpp
+    src/factories/suction_cup_factory.cpp
+    src/factories/battery_factory.cpp
+    src/factories/charger_factory.cpp
+    src/factories/light_factory.cpp
+    src/factories/plc_factory.cpp
     src/devices/robot.cpp
+    src/devices/robot002.cpp
     src/devices/agv.cpp
+    src/devices/agv002.cpp
     src/devices/suction_cup.cpp
+    src/devices/suction_cup002.cpp
     src/devices/battery.cpp
+    src/devices/battery002.cpp
     src/devices/charger.cpp
+    src/devices/charger002.cpp
     src/devices/light.cpp
+    src/devices/light002.cpp
     src/devices/plc.cpp
+    src/devices/plc002.cpp
+    src/devices/iloabot_device.cpp
     src/comm/socket.cpp
     src/comm/serial_port.cpp
     src/comm/tcp_client.cpp

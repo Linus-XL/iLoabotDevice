@@ -1,7 +1,9 @@
 #include "iloabot/devices/plc.h"
 
-std::string ILoabotPLC::name() const { return "iLoabot PLC"; }
+ILoabotPLC::ILoabotPLC(std::string model) : model_(std::move(model)) {}
+
 std::string ILoabotPLC::type() const { return "PLC"; }
+std::string ILoabotPLC::model() const { return model_; }
 
 bool ILoabotPLC::initialize() {
     status_ = DeviceStatus::Idle;

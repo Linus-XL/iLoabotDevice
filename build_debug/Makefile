@@ -238,30 +238,6 @@ src/comm/tcp_server.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/iLoabotDevice.dir/build.make CMakeFiles/iLoabotDevice.dir/src/comm/tcp_server.cpp.s
 .PHONY : src/comm/tcp_server.cpp.s
 
-src/device_factory.o: src/device_factory.cpp.o
-.PHONY : src/device_factory.o
-
-# target to build an object file
-src/device_factory.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/iLoabotDevice.dir/build.make CMakeFiles/iLoabotDevice.dir/src/device_factory.cpp.o
-.PHONY : src/device_factory.cpp.o
-
-src/device_factory.i: src/device_factory.cpp.i
-.PHONY : src/device_factory.i
-
-# target to preprocess a source file
-src/device_factory.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/iLoabotDevice.dir/build.make CMakeFiles/iLoabotDevice.dir/src/device_factory.cpp.i
-.PHONY : src/device_factory.cpp.i
-
-src/device_factory.s: src/device_factory.cpp.s
-.PHONY : src/device_factory.s
-
-# target to generate assembly for a file
-src/device_factory.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/iLoabotDevice.dir/build.make CMakeFiles/iLoabotDevice.dir/src/device_factory.cpp.s
-.PHONY : src/device_factory.cpp.s
-
 src/devices/agv.o: src/devices/agv.cpp.o
 .PHONY : src/devices/agv.o
 
@@ -285,6 +261,30 @@ src/devices/agv.s: src/devices/agv.cpp.s
 src/devices/agv.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/iLoabotDevice.dir/build.make CMakeFiles/iLoabotDevice.dir/src/devices/agv.cpp.s
 .PHONY : src/devices/agv.cpp.s
+
+src/devices/agv002.o: src/devices/agv002.cpp.o
+.PHONY : src/devices/agv002.o
+
+# target to build an object file
+src/devices/agv002.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/iLoabotDevice.dir/build.make CMakeFiles/iLoabotDevice.dir/src/devices/agv002.cpp.o
+.PHONY : src/devices/agv002.cpp.o
+
+src/devices/agv002.i: src/devices/agv002.cpp.i
+.PHONY : src/devices/agv002.i
+
+# target to preprocess a source file
+src/devices/agv002.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/iLoabotDevice.dir/build.make CMakeFiles/iLoabotDevice.dir/src/devices/agv002.cpp.i
+.PHONY : src/devices/agv002.cpp.i
+
+src/devices/agv002.s: src/devices/agv002.cpp.s
+.PHONY : src/devices/agv002.s
+
+# target to generate assembly for a file
+src/devices/agv002.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/iLoabotDevice.dir/build.make CMakeFiles/iLoabotDevice.dir/src/devices/agv002.cpp.s
+.PHONY : src/devices/agv002.cpp.s
 
 src/devices/battery.o: src/devices/battery.cpp.o
 .PHONY : src/devices/battery.o
@@ -310,6 +310,30 @@ src/devices/battery.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/iLoabotDevice.dir/build.make CMakeFiles/iLoabotDevice.dir/src/devices/battery.cpp.s
 .PHONY : src/devices/battery.cpp.s
 
+src/devices/battery002.o: src/devices/battery002.cpp.o
+.PHONY : src/devices/battery002.o
+
+# target to build an object file
+src/devices/battery002.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/iLoabotDevice.dir/build.make CMakeFiles/iLoabotDevice.dir/src/devices/battery002.cpp.o
+.PHONY : src/devices/battery002.cpp.o
+
+src/devices/battery002.i: src/devices/battery002.cpp.i
+.PHONY : src/devices/battery002.i
+
+# target to preprocess a source file
+src/devices/battery002.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/iLoabotDevice.dir/build.make CMakeFiles/iLoabotDevice.dir/src/devices/battery002.cpp.i
+.PHONY : src/devices/battery002.cpp.i
+
+src/devices/battery002.s: src/devices/battery002.cpp.s
+.PHONY : src/devices/battery002.s
+
+# target to generate assembly for a file
+src/devices/battery002.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/iLoabotDevice.dir/build.make CMakeFiles/iLoabotDevice.dir/src/devices/battery002.cpp.s
+.PHONY : src/devices/battery002.cpp.s
+
 src/devices/charger.o: src/devices/charger.cpp.o
 .PHONY : src/devices/charger.o
 
@@ -333,6 +357,54 @@ src/devices/charger.s: src/devices/charger.cpp.s
 src/devices/charger.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/iLoabotDevice.dir/build.make CMakeFiles/iLoabotDevice.dir/src/devices/charger.cpp.s
 .PHONY : src/devices/charger.cpp.s
+
+src/devices/charger002.o: src/devices/charger002.cpp.o
+.PHONY : src/devices/charger002.o
+
+# target to build an object file
+src/devices/charger002.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/iLoabotDevice.dir/build.make CMakeFiles/iLoabotDevice.dir/src/devices/charger002.cpp.o
+.PHONY : src/devices/charger002.cpp.o
+
+src/devices/charger002.i: src/devices/charger002.cpp.i
+.PHONY : src/devices/charger002.i
+
+# target to preprocess a source file
+src/devices/charger002.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/iLoabotDevice.dir/build.make CMakeFiles/iLoabotDevice.dir/src/devices/charger002.cpp.i
+.PHONY : src/devices/charger002.cpp.i
+
+src/devices/charger002.s: src/devices/charger002.cpp.s
+.PHONY : src/devices/charger002.s
+
+# target to generate assembly for a file
+src/devices/charger002.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/iLoabotDevice.dir/build.make CMakeFiles/iLoabotDevice.dir/src/devices/charger002.cpp.s
+.PHONY : src/devices/charger002.cpp.s
+
+src/devices/iloabot_device.o: src/devices/iloabot_device.cpp.o
+.PHONY : src/devices/iloabot_device.o
+
+# target to build an object file
+src/devices/iloabot_device.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/iLoabotDevice.dir/build.make CMakeFiles/iLoabotDevice.dir/src/devices/iloabot_device.cpp.o
+.PHONY : src/devices/iloabot_device.cpp.o
+
+src/devices/iloabot_device.i: src/devices/iloabot_device.cpp.i
+.PHONY : src/devices/iloabot_device.i
+
+# target to preprocess a source file
+src/devices/iloabot_device.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/iLoabotDevice.dir/build.make CMakeFiles/iLoabotDevice.dir/src/devices/iloabot_device.cpp.i
+.PHONY : src/devices/iloabot_device.cpp.i
+
+src/devices/iloabot_device.s: src/devices/iloabot_device.cpp.s
+.PHONY : src/devices/iloabot_device.s
+
+# target to generate assembly for a file
+src/devices/iloabot_device.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/iLoabotDevice.dir/build.make CMakeFiles/iLoabotDevice.dir/src/devices/iloabot_device.cpp.s
+.PHONY : src/devices/iloabot_device.cpp.s
 
 src/devices/light.o: src/devices/light.cpp.o
 .PHONY : src/devices/light.o
@@ -358,6 +430,30 @@ src/devices/light.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/iLoabotDevice.dir/build.make CMakeFiles/iLoabotDevice.dir/src/devices/light.cpp.s
 .PHONY : src/devices/light.cpp.s
 
+src/devices/light002.o: src/devices/light002.cpp.o
+.PHONY : src/devices/light002.o
+
+# target to build an object file
+src/devices/light002.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/iLoabotDevice.dir/build.make CMakeFiles/iLoabotDevice.dir/src/devices/light002.cpp.o
+.PHONY : src/devices/light002.cpp.o
+
+src/devices/light002.i: src/devices/light002.cpp.i
+.PHONY : src/devices/light002.i
+
+# target to preprocess a source file
+src/devices/light002.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/iLoabotDevice.dir/build.make CMakeFiles/iLoabotDevice.dir/src/devices/light002.cpp.i
+.PHONY : src/devices/light002.cpp.i
+
+src/devices/light002.s: src/devices/light002.cpp.s
+.PHONY : src/devices/light002.s
+
+# target to generate assembly for a file
+src/devices/light002.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/iLoabotDevice.dir/build.make CMakeFiles/iLoabotDevice.dir/src/devices/light002.cpp.s
+.PHONY : src/devices/light002.cpp.s
+
 src/devices/plc.o: src/devices/plc.cpp.o
 .PHONY : src/devices/plc.o
 
@@ -381,6 +477,30 @@ src/devices/plc.s: src/devices/plc.cpp.s
 src/devices/plc.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/iLoabotDevice.dir/build.make CMakeFiles/iLoabotDevice.dir/src/devices/plc.cpp.s
 .PHONY : src/devices/plc.cpp.s
+
+src/devices/plc002.o: src/devices/plc002.cpp.o
+.PHONY : src/devices/plc002.o
+
+# target to build an object file
+src/devices/plc002.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/iLoabotDevice.dir/build.make CMakeFiles/iLoabotDevice.dir/src/devices/plc002.cpp.o
+.PHONY : src/devices/plc002.cpp.o
+
+src/devices/plc002.i: src/devices/plc002.cpp.i
+.PHONY : src/devices/plc002.i
+
+# target to preprocess a source file
+src/devices/plc002.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/iLoabotDevice.dir/build.make CMakeFiles/iLoabotDevice.dir/src/devices/plc002.cpp.i
+.PHONY : src/devices/plc002.cpp.i
+
+src/devices/plc002.s: src/devices/plc002.cpp.s
+.PHONY : src/devices/plc002.s
+
+# target to generate assembly for a file
+src/devices/plc002.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/iLoabotDevice.dir/build.make CMakeFiles/iLoabotDevice.dir/src/devices/plc002.cpp.s
+.PHONY : src/devices/plc002.cpp.s
 
 src/devices/robot.o: src/devices/robot.cpp.o
 .PHONY : src/devices/robot.o
@@ -406,6 +526,30 @@ src/devices/robot.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/iLoabotDevice.dir/build.make CMakeFiles/iLoabotDevice.dir/src/devices/robot.cpp.s
 .PHONY : src/devices/robot.cpp.s
 
+src/devices/robot002.o: src/devices/robot002.cpp.o
+.PHONY : src/devices/robot002.o
+
+# target to build an object file
+src/devices/robot002.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/iLoabotDevice.dir/build.make CMakeFiles/iLoabotDevice.dir/src/devices/robot002.cpp.o
+.PHONY : src/devices/robot002.cpp.o
+
+src/devices/robot002.i: src/devices/robot002.cpp.i
+.PHONY : src/devices/robot002.i
+
+# target to preprocess a source file
+src/devices/robot002.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/iLoabotDevice.dir/build.make CMakeFiles/iLoabotDevice.dir/src/devices/robot002.cpp.i
+.PHONY : src/devices/robot002.cpp.i
+
+src/devices/robot002.s: src/devices/robot002.cpp.s
+.PHONY : src/devices/robot002.s
+
+# target to generate assembly for a file
+src/devices/robot002.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/iLoabotDevice.dir/build.make CMakeFiles/iLoabotDevice.dir/src/devices/robot002.cpp.s
+.PHONY : src/devices/robot002.cpp.s
+
 src/devices/suction_cup.o: src/devices/suction_cup.cpp.o
 .PHONY : src/devices/suction_cup.o
 
@@ -429,6 +573,198 @@ src/devices/suction_cup.s: src/devices/suction_cup.cpp.s
 src/devices/suction_cup.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/iLoabotDevice.dir/build.make CMakeFiles/iLoabotDevice.dir/src/devices/suction_cup.cpp.s
 .PHONY : src/devices/suction_cup.cpp.s
+
+src/devices/suction_cup002.o: src/devices/suction_cup002.cpp.o
+.PHONY : src/devices/suction_cup002.o
+
+# target to build an object file
+src/devices/suction_cup002.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/iLoabotDevice.dir/build.make CMakeFiles/iLoabotDevice.dir/src/devices/suction_cup002.cpp.o
+.PHONY : src/devices/suction_cup002.cpp.o
+
+src/devices/suction_cup002.i: src/devices/suction_cup002.cpp.i
+.PHONY : src/devices/suction_cup002.i
+
+# target to preprocess a source file
+src/devices/suction_cup002.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/iLoabotDevice.dir/build.make CMakeFiles/iLoabotDevice.dir/src/devices/suction_cup002.cpp.i
+.PHONY : src/devices/suction_cup002.cpp.i
+
+src/devices/suction_cup002.s: src/devices/suction_cup002.cpp.s
+.PHONY : src/devices/suction_cup002.s
+
+# target to generate assembly for a file
+src/devices/suction_cup002.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/iLoabotDevice.dir/build.make CMakeFiles/iLoabotDevice.dir/src/devices/suction_cup002.cpp.s
+.PHONY : src/devices/suction_cup002.cpp.s
+
+src/factories/agv_factory.o: src/factories/agv_factory.cpp.o
+.PHONY : src/factories/agv_factory.o
+
+# target to build an object file
+src/factories/agv_factory.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/iLoabotDevice.dir/build.make CMakeFiles/iLoabotDevice.dir/src/factories/agv_factory.cpp.o
+.PHONY : src/factories/agv_factory.cpp.o
+
+src/factories/agv_factory.i: src/factories/agv_factory.cpp.i
+.PHONY : src/factories/agv_factory.i
+
+# target to preprocess a source file
+src/factories/agv_factory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/iLoabotDevice.dir/build.make CMakeFiles/iLoabotDevice.dir/src/factories/agv_factory.cpp.i
+.PHONY : src/factories/agv_factory.cpp.i
+
+src/factories/agv_factory.s: src/factories/agv_factory.cpp.s
+.PHONY : src/factories/agv_factory.s
+
+# target to generate assembly for a file
+src/factories/agv_factory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/iLoabotDevice.dir/build.make CMakeFiles/iLoabotDevice.dir/src/factories/agv_factory.cpp.s
+.PHONY : src/factories/agv_factory.cpp.s
+
+src/factories/battery_factory.o: src/factories/battery_factory.cpp.o
+.PHONY : src/factories/battery_factory.o
+
+# target to build an object file
+src/factories/battery_factory.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/iLoabotDevice.dir/build.make CMakeFiles/iLoabotDevice.dir/src/factories/battery_factory.cpp.o
+.PHONY : src/factories/battery_factory.cpp.o
+
+src/factories/battery_factory.i: src/factories/battery_factory.cpp.i
+.PHONY : src/factories/battery_factory.i
+
+# target to preprocess a source file
+src/factories/battery_factory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/iLoabotDevice.dir/build.make CMakeFiles/iLoabotDevice.dir/src/factories/battery_factory.cpp.i
+.PHONY : src/factories/battery_factory.cpp.i
+
+src/factories/battery_factory.s: src/factories/battery_factory.cpp.s
+.PHONY : src/factories/battery_factory.s
+
+# target to generate assembly for a file
+src/factories/battery_factory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/iLoabotDevice.dir/build.make CMakeFiles/iLoabotDevice.dir/src/factories/battery_factory.cpp.s
+.PHONY : src/factories/battery_factory.cpp.s
+
+src/factories/charger_factory.o: src/factories/charger_factory.cpp.o
+.PHONY : src/factories/charger_factory.o
+
+# target to build an object file
+src/factories/charger_factory.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/iLoabotDevice.dir/build.make CMakeFiles/iLoabotDevice.dir/src/factories/charger_factory.cpp.o
+.PHONY : src/factories/charger_factory.cpp.o
+
+src/factories/charger_factory.i: src/factories/charger_factory.cpp.i
+.PHONY : src/factories/charger_factory.i
+
+# target to preprocess a source file
+src/factories/charger_factory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/iLoabotDevice.dir/build.make CMakeFiles/iLoabotDevice.dir/src/factories/charger_factory.cpp.i
+.PHONY : src/factories/charger_factory.cpp.i
+
+src/factories/charger_factory.s: src/factories/charger_factory.cpp.s
+.PHONY : src/factories/charger_factory.s
+
+# target to generate assembly for a file
+src/factories/charger_factory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/iLoabotDevice.dir/build.make CMakeFiles/iLoabotDevice.dir/src/factories/charger_factory.cpp.s
+.PHONY : src/factories/charger_factory.cpp.s
+
+src/factories/light_factory.o: src/factories/light_factory.cpp.o
+.PHONY : src/factories/light_factory.o
+
+# target to build an object file
+src/factories/light_factory.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/iLoabotDevice.dir/build.make CMakeFiles/iLoabotDevice.dir/src/factories/light_factory.cpp.o
+.PHONY : src/factories/light_factory.cpp.o
+
+src/factories/light_factory.i: src/factories/light_factory.cpp.i
+.PHONY : src/factories/light_factory.i
+
+# target to preprocess a source file
+src/factories/light_factory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/iLoabotDevice.dir/build.make CMakeFiles/iLoabotDevice.dir/src/factories/light_factory.cpp.i
+.PHONY : src/factories/light_factory.cpp.i
+
+src/factories/light_factory.s: src/factories/light_factory.cpp.s
+.PHONY : src/factories/light_factory.s
+
+# target to generate assembly for a file
+src/factories/light_factory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/iLoabotDevice.dir/build.make CMakeFiles/iLoabotDevice.dir/src/factories/light_factory.cpp.s
+.PHONY : src/factories/light_factory.cpp.s
+
+src/factories/plc_factory.o: src/factories/plc_factory.cpp.o
+.PHONY : src/factories/plc_factory.o
+
+# target to build an object file
+src/factories/plc_factory.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/iLoabotDevice.dir/build.make CMakeFiles/iLoabotDevice.dir/src/factories/plc_factory.cpp.o
+.PHONY : src/factories/plc_factory.cpp.o
+
+src/factories/plc_factory.i: src/factories/plc_factory.cpp.i
+.PHONY : src/factories/plc_factory.i
+
+# target to preprocess a source file
+src/factories/plc_factory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/iLoabotDevice.dir/build.make CMakeFiles/iLoabotDevice.dir/src/factories/plc_factory.cpp.i
+.PHONY : src/factories/plc_factory.cpp.i
+
+src/factories/plc_factory.s: src/factories/plc_factory.cpp.s
+.PHONY : src/factories/plc_factory.s
+
+# target to generate assembly for a file
+src/factories/plc_factory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/iLoabotDevice.dir/build.make CMakeFiles/iLoabotDevice.dir/src/factories/plc_factory.cpp.s
+.PHONY : src/factories/plc_factory.cpp.s
+
+src/factories/robot_factory.o: src/factories/robot_factory.cpp.o
+.PHONY : src/factories/robot_factory.o
+
+# target to build an object file
+src/factories/robot_factory.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/iLoabotDevice.dir/build.make CMakeFiles/iLoabotDevice.dir/src/factories/robot_factory.cpp.o
+.PHONY : src/factories/robot_factory.cpp.o
+
+src/factories/robot_factory.i: src/factories/robot_factory.cpp.i
+.PHONY : src/factories/robot_factory.i
+
+# target to preprocess a source file
+src/factories/robot_factory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/iLoabotDevice.dir/build.make CMakeFiles/iLoabotDevice.dir/src/factories/robot_factory.cpp.i
+.PHONY : src/factories/robot_factory.cpp.i
+
+src/factories/robot_factory.s: src/factories/robot_factory.cpp.s
+.PHONY : src/factories/robot_factory.s
+
+# target to generate assembly for a file
+src/factories/robot_factory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/iLoabotDevice.dir/build.make CMakeFiles/iLoabotDevice.dir/src/factories/robot_factory.cpp.s
+.PHONY : src/factories/robot_factory.cpp.s
+
+src/factories/suction_cup_factory.o: src/factories/suction_cup_factory.cpp.o
+.PHONY : src/factories/suction_cup_factory.o
+
+# target to build an object file
+src/factories/suction_cup_factory.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/iLoabotDevice.dir/build.make CMakeFiles/iLoabotDevice.dir/src/factories/suction_cup_factory.cpp.o
+.PHONY : src/factories/suction_cup_factory.cpp.o
+
+src/factories/suction_cup_factory.i: src/factories/suction_cup_factory.cpp.i
+.PHONY : src/factories/suction_cup_factory.i
+
+# target to preprocess a source file
+src/factories/suction_cup_factory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/iLoabotDevice.dir/build.make CMakeFiles/iLoabotDevice.dir/src/factories/suction_cup_factory.cpp.i
+.PHONY : src/factories/suction_cup_factory.cpp.i
+
+src/factories/suction_cup_factory.s: src/factories/suction_cup_factory.cpp.s
+.PHONY : src/factories/suction_cup_factory.s
+
+# target to generate assembly for a file
+src/factories/suction_cup_factory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/iLoabotDevice.dir/build.make CMakeFiles/iLoabotDevice.dir/src/factories/suction_cup_factory.cpp.s
+.PHONY : src/factories/suction_cup_factory.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
@@ -454,6 +790,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/iLoabotDeviceDemo.dir/build.make CMakeFiles/iLoabotDeviceDemo.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/product_factory.o: src/product_factory.cpp.o
+.PHONY : src/product_factory.o
+
+# target to build an object file
+src/product_factory.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/iLoabotDevice.dir/build.make CMakeFiles/iLoabotDevice.dir/src/product_factory.cpp.o
+.PHONY : src/product_factory.cpp.o
+
+src/product_factory.i: src/product_factory.cpp.i
+.PHONY : src/product_factory.i
+
+# target to preprocess a source file
+src/product_factory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/iLoabotDevice.dir/build.make CMakeFiles/iLoabotDevice.dir/src/product_factory.cpp.i
+.PHONY : src/product_factory.cpp.i
+
+src/product_factory.s: src/product_factory.cpp.s
+.PHONY : src/product_factory.s
+
+# target to generate assembly for a file
+src/product_factory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/iLoabotDevice.dir/build.make CMakeFiles/iLoabotDevice.dir/src/product_factory.cpp.s
+.PHONY : src/product_factory.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -476,33 +836,78 @@ help:
 	@echo "... src/comm/tcp_server.o"
 	@echo "... src/comm/tcp_server.i"
 	@echo "... src/comm/tcp_server.s"
-	@echo "... src/device_factory.o"
-	@echo "... src/device_factory.i"
-	@echo "... src/device_factory.s"
 	@echo "... src/devices/agv.o"
 	@echo "... src/devices/agv.i"
 	@echo "... src/devices/agv.s"
+	@echo "... src/devices/agv002.o"
+	@echo "... src/devices/agv002.i"
+	@echo "... src/devices/agv002.s"
 	@echo "... src/devices/battery.o"
 	@echo "... src/devices/battery.i"
 	@echo "... src/devices/battery.s"
+	@echo "... src/devices/battery002.o"
+	@echo "... src/devices/battery002.i"
+	@echo "... src/devices/battery002.s"
 	@echo "... src/devices/charger.o"
 	@echo "... src/devices/charger.i"
 	@echo "... src/devices/charger.s"
+	@echo "... src/devices/charger002.o"
+	@echo "... src/devices/charger002.i"
+	@echo "... src/devices/charger002.s"
+	@echo "... src/devices/iloabot_device.o"
+	@echo "... src/devices/iloabot_device.i"
+	@echo "... src/devices/iloabot_device.s"
 	@echo "... src/devices/light.o"
 	@echo "... src/devices/light.i"
 	@echo "... src/devices/light.s"
+	@echo "... src/devices/light002.o"
+	@echo "... src/devices/light002.i"
+	@echo "... src/devices/light002.s"
 	@echo "... src/devices/plc.o"
 	@echo "... src/devices/plc.i"
 	@echo "... src/devices/plc.s"
+	@echo "... src/devices/plc002.o"
+	@echo "... src/devices/plc002.i"
+	@echo "... src/devices/plc002.s"
 	@echo "... src/devices/robot.o"
 	@echo "... src/devices/robot.i"
 	@echo "... src/devices/robot.s"
+	@echo "... src/devices/robot002.o"
+	@echo "... src/devices/robot002.i"
+	@echo "... src/devices/robot002.s"
 	@echo "... src/devices/suction_cup.o"
 	@echo "... src/devices/suction_cup.i"
 	@echo "... src/devices/suction_cup.s"
+	@echo "... src/devices/suction_cup002.o"
+	@echo "... src/devices/suction_cup002.i"
+	@echo "... src/devices/suction_cup002.s"
+	@echo "... src/factories/agv_factory.o"
+	@echo "... src/factories/agv_factory.i"
+	@echo "... src/factories/agv_factory.s"
+	@echo "... src/factories/battery_factory.o"
+	@echo "... src/factories/battery_factory.i"
+	@echo "... src/factories/battery_factory.s"
+	@echo "... src/factories/charger_factory.o"
+	@echo "... src/factories/charger_factory.i"
+	@echo "... src/factories/charger_factory.s"
+	@echo "... src/factories/light_factory.o"
+	@echo "... src/factories/light_factory.i"
+	@echo "... src/factories/light_factory.s"
+	@echo "... src/factories/plc_factory.o"
+	@echo "... src/factories/plc_factory.i"
+	@echo "... src/factories/plc_factory.s"
+	@echo "... src/factories/robot_factory.o"
+	@echo "... src/factories/robot_factory.i"
+	@echo "... src/factories/robot_factory.s"
+	@echo "... src/factories/suction_cup_factory.o"
+	@echo "... src/factories/suction_cup_factory.i"
+	@echo "... src/factories/suction_cup_factory.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/product_factory.o"
+	@echo "... src/product_factory.i"
+	@echo "... src/product_factory.s"
 .PHONY : help
 
 

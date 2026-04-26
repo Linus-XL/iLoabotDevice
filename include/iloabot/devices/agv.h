@@ -1,26 +1,32 @@
 #pragma once
 
-#include "iloabot/device.h"
-#include "iloabot/interfaces/controllable.h"
-#include "iloabot/interfaces/status_provider.h"
-#include "iloabot/interfaces/movable.h"
+#include "iloabot/device_product.h"
 
-class ILoabotAGV final : public Device, public Controllable, public StatusProvider, public Movable {
+class ILoabotAGV : public DeviceProduct {
 public:
-    std::string name() const override;
+    explicit ILoabotAGV(std::string model = "A-200");
+
+    virtual ~ILoabotAGV() = default;
+
+    virtual std::string name() const = 0;
     std::string type() const override;
+    std::string model() const override;
 
-    bool initialize() override;
-    void shutdown() override;
-    void reset() override;
+    // 控制
+    virtual bool initialize();
+    virtual void shutdown();
+    virtual void reset();
 
-    DeviceStatus status() const override;
+    // 状态
+    virtual DeviceStatus status() const;
 
-    void moveTo(double x, double y, double z) override;
-    void stop() override;
-    Position currentPosition() const override;
+    // 运动
+    virtual void moveTo(double x, double y, double z);
+    virtual void stop();
+    virtual Position currentPosition() const;
 
-private:
+protected:
+    std::string model_;
     DeviceStatus status_ = DeviceStatus::Offline;
     Position position_;
 };

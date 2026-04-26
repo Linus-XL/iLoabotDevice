@@ -1,20 +1,26 @@
 #pragma once
 
-#include "iloabot/device.h"
-#include "iloabot/interfaces/status_provider.h"
-#include "iloabot/interfaces/power_manageable.h"
+#include "iloabot/device_product.h"
 
-class ILoabotBattery final : public Device, public StatusProvider, public PowerManageable {
+class ILoabotBattery : public DeviceProduct {
 public:
-    std::string name() const override;
+    explicit ILoabotBattery(std::string model = "B-200");
+
+    virtual ~ILoabotBattery() = default;
+
+    virtual std::string name() const = 0;
     std::string type() const override;
+    std::string model() const override;
 
-    DeviceStatus status() const override;
+    // 状态
+    virtual DeviceStatus status() const;
 
-    int batteryLevel() const override;
-    bool isCharging() const override;
+    // 电源
+    virtual int batteryLevel() const;
+    virtual bool isCharging() const;
 
-private:
+protected:
+    std::string model_;
     DeviceStatus status_ = DeviceStatus::Idle;
     int level_ = 100;
     bool charging_ = false;

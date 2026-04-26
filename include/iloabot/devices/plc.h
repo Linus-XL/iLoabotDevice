@@ -1,27 +1,34 @@
 #pragma once
 
+#include <string>
 #include <unordered_map>
 
-#include "iloabot/device.h"
-#include "iloabot/interfaces/controllable.h"
-#include "iloabot/interfaces/status_provider.h"
-#include "iloabot/interfaces/configurable.h"
+#include "iloabot/device_product.h"
 
-class ILoabotPLC final : public Device, public Controllable, public StatusProvider, public Configurable {
+class ILoabotPLC : public DeviceProduct {
 public:
-    std::string name() const override;
+    explicit ILoabotPLC(std::string model = "P-200");
+
+    virtual ~ILoabotPLC() = default;
+
+    virtual std::string name() const = 0;
     std::string type() const override;
+    std::string model() const override;
 
-    bool initialize() override;
-    void shutdown() override;
-    void reset() override;
+    // 控制
+    virtual bool initialize();
+    virtual void shutdown();
+    virtual void reset();
 
-    DeviceStatus status() const override;
+    // 状态
+    virtual DeviceStatus status() const;
 
-    void setParam(const std::string& key, const std::string& value) override;
-    std::string getParam(const std::string& key) const override;
+    // 参数配置
+    virtual void setParam(const std::string& key, const std::string& value);
+    virtual std::string getParam(const std::string& key) const;
 
-private:
+protected:
+    std::string model_;
     DeviceStatus status_ = DeviceStatus::Offline;
     std::unordered_map<std::string, std::string> params_;
 };

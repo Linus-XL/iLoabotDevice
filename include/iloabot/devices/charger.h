@@ -1,26 +1,32 @@
 #pragma once
 
-#include "iloabot/device.h"
-#include "iloabot/interfaces/controllable.h"
-#include "iloabot/interfaces/status_provider.h"
-#include "iloabot/interfaces/switchable.h"
+#include "iloabot/device_product.h"
 
-class ILoabotCharger final : public Device, public Controllable, public StatusProvider, public Switchable {
+class ILoabotCharger : public DeviceProduct {
 public:
-    std::string name() const override;
+    explicit ILoabotCharger(std::string model = "C-200");
+
+    virtual ~ILoabotCharger() = default;
+
+    virtual std::string name() const = 0;
     std::string type() const override;
+    std::string model() const override;
 
-    bool initialize() override;
-    void shutdown() override;
-    void reset() override;
+    // 控制
+    virtual bool initialize();
+    virtual void shutdown();
+    virtual void reset();
 
-    DeviceStatus status() const override;
+    // 状态
+    virtual DeviceStatus status() const;
 
-    void turnOn() override;
-    void turnOff() override;
-    bool isOn() const override;
+    // 开关
+    virtual void turnOn();
+    virtual void turnOff();
+    virtual bool isOn() const;
 
-private:
+protected:
+    std::string model_;
     DeviceStatus status_ = DeviceStatus::Offline;
     bool on_ = false;
 };
