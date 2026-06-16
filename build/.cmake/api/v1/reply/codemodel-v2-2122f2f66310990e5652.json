@@ -1,0 +1,204 @@
+{
+	"configurations" : 
+	[
+		{
+			"abstractTargets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Boost::assert::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Boost__assert-Debug-8d73d2d6af34d572bd58.json",
+					"name" : "Boost::assert",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Boost::boost::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Boost__boost-Debug-c9e934b05f0d86467c9b.json",
+					"name" : "Boost::boost",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Boost::compat::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Boost__compat-Debug-605d14cca430883c48ab.json",
+					"name" : "Boost::compat",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Boost::config::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Boost__config-Debug-7ab6d8a406bbc4d3fa31.json",
+					"name" : "Boost::config",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Boost::diagnostic_definitions::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Boost__diagnostic_definitions-Debug-b19be06fa072eeef2fa1.json",
+					"name" : "Boost::diagnostic_definitions",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Boost::disable_autolinking::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Boost__disable_autolinking-Debug-76cd58c11957596b61eb.json",
+					"name" : "Boost::disable_autolinking",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Boost::dynamic_linking::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Boost__dynamic_linking-Debug-26409b2df2033bae6abf.json",
+					"name" : "Boost::dynamic_linking",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Boost::headers::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Boost__headers-Debug-dd49c01c1ec595500769.json",
+					"name" : "Boost::headers",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Boost::mp11::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Boost__mp11-Debug-31d7cfb0e0f6d7f160c8.json",
+					"name" : "Boost::mp11",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Boost::predef::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Boost__predef-Debug-faf50f35e12f2e6ed078.json",
+					"name" : "Boost::predef",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Boost::system::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Boost__system-Debug-362a1ce29edddeb236d7.json",
+					"name" : "Boost::system",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Boost::throw_exception::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Boost__throw_exception-Debug-7b58993cd3a81ad0b793.json",
+					"name" : "Boost::throw_exception",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Boost::variant2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Boost__variant2-Debug-8f4d01d0362a61b51ad0.json",
+					"name" : "Boost::variant2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Boost::winapi::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Boost__winapi-Debug-0fcb256c939fcbc111c1.json",
+					"name" : "Boost::winapi",
+					"projectIndex" : 0
+				}
+			],
+			"directories" : 
+			[
+				{
+					"abstractTargetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13
+					],
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f040eec181a89de70dbe.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"abstractTargetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "iLoabotDevice",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "iLoabotDevice::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iLoabotDevice-Debug-918c6c806f48e1c334e8.json",
+					"name" : "iLoabotDevice",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iLoabotDeviceDemo::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iLoabotDeviceDemo-Debug-fb739cfe216aed7db3dd.json",
+					"name" : "iLoabotDeviceDemo",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/Senad/Project/iLoabot_M/iLoabotDevice/build",
+		"source" : "D:/Senad/Project/iLoabot_M/iLoabotDevice"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 10
+	}
+}
