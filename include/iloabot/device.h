@@ -32,7 +32,7 @@ public:
 
 private:
     std::string name_;
-    std::vector<std::unique_ptr<DeviceProduct>> products_;
+    std::vector<std::unique_ptr<DeviceProduct>> products_; 
 };
 
 class Device {

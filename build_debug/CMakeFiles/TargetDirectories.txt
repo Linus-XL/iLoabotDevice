@@ -1,4 +1,4 @@
-/home/linus/iLoabotDevice/build_debug/CMakeFiles/iLoabotDevice.dir
-/home/linus/iLoabotDevice/build_debug/CMakeFiles/iLoabotDeviceDemo.dir
-/home/linus/iLoabotDevice/build_debug/CMakeFiles/edit_cache.dir
-/home/linus/iLoabotDevice/build_debug/CMakeFiles/rebuild_cache.dir
+D:/Senad/Project/iLoabot_M/iLoabotDevice/build_debug/CMakeFiles/iLoabotDevice.dir
+D:/Senad/Project/iLoabot_M/iLoabotDevice/build_debug/CMakeFiles/iLoabotDeviceDemo.dir
+D:/Senad/Project/iLoabot_M/iLoabotDevice/build_debug/CMakeFiles/edit_cache.dir
+D:/Senad/Project/iLoabot_M/iLoabotDevice/build_debug/CMakeFiles/rebuild_cache.dir

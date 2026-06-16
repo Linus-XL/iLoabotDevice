@@ -5,10 +5,11 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
-find_package(Boost REQUIRED COMPONENTS system)
+find_package(Boost CONFIG REQUIRED COMPONENTS system)
 
 set(ILOABOT_CORE_SOURCES
     src/product_factory.cpp
+    src/c_api.cpp
     src/factories/robot_factory.cpp
     src/factories/agv_factory.cpp
     src/factories/suction_cup_factory.cpp
@@ -41,11 +42,16 @@ add_library(iLoabotDevice SHARED
     ${ILOABOT_CORE_SOURCES}
 )
 
-target_include_directories(iLoabotDevice PUBLIC ${CMAKE_SOURCE_DIR}/include)
-target_link_libraries(iLoabotDevice PUBLIC Boost::system)
+if(MINGW)
+    target_link_options(iLoabotDevice PRIVATE -Wl,--export-all-symbols)
+endif()
 
+target_include_directories(iLoabotDevice PUBLIC ${CMAKE_SOURCE_DIR}/include) 
+target_link_libraries(iLoabotDevice PUBLIC Boost::system)
+target_link_libraries(iLoabotDevice PUBLIC ws2_32 mswsock)
 add_executable(iLoabotDeviceDemo
     src/main.cpp
 )
 
 target_link_libraries(iLoabotDeviceDemo PRIVATE iLoabotDevice)
+target_link_libraries(iLoabotDeviceDemo PRIVATE advapi32)

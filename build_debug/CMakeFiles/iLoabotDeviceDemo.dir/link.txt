@@ -1,1 +1,0 @@
-/usr/bin/c++ -g -O0 -DDEBUG -g CMakeFiles/iLoabotDeviceDemo.dir/src/main.cpp.o -o iLoabotDeviceDemo  -Wl,-rpath,/home/linus/iLoabotDevice/build_debug libiLoabotDevice.so /usr/lib/x86_64-linux-gnu/libboost_system.so.1.74.0 

@@ -40,7 +40,7 @@ bool runTimedOperation(
 
         if (timeoutMs > 0) {
             boost::system::error_code ignoredEc;
-            timer.cancel(ignoredEc);
+            timer.cancel();
         }
     });
 
@@ -66,7 +66,6 @@ unsigned int toBaudRateValue(BaudRate baudRate) {
         case BaudRate::Baud115200:
             return 115200;
     }
-
     return 115200;
 }
 

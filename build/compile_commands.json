@@ -1,0 +1,176 @@
+[
+{
+  "directory": "D:/Senad/Project/iLoabot_M/iLoabotDevice/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DiLoabotDevice_EXPORTS -ID:/Senad/Project/iLoabot_M/iLoabotDevice/include -g -std=c++17 -o CMakeFiles\\iLoabotDevice.dir\\src\\product_factory.cpp.obj -c D:\\Senad\\Project\\iLoabot_M\\iLoabotDevice\\src\\product_factory.cpp",
+  "file": "D:/Senad/Project/iLoabot_M/iLoabotDevice/src/product_factory.cpp",
+  "output": "D:/Senad/Project/iLoabot_M/iLoabotDevice/build/CMakeFiles/iLoabotDevice.dir/src/product_factory.cpp.obj"
+},
+{
+  "directory": "D:/Senad/Project/iLoabot_M/iLoabotDevice/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DiLoabotDevice_EXPORTS -ID:/Senad/Project/iLoabot_M/iLoabotDevice/include -g -std=c++17 -o CMakeFiles\\iLoabotDevice.dir\\src\\c_api.cpp.obj -c D:\\Senad\\Project\\iLoabot_M\\iLoabotDevice\\src\\c_api.cpp",
+  "file": "D:/Senad/Project/iLoabot_M/iLoabotDevice/src/c_api.cpp",
+  "output": "D:/Senad/Project/iLoabot_M/iLoabotDevice/build/CMakeFiles/iLoabotDevice.dir/src/c_api.cpp.obj"
+},
+{
+  "directory": "D:/Senad/Project/iLoabot_M/iLoabotDevice/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DiLoabotDevice_EXPORTS -ID:/Senad/Project/iLoabot_M/iLoabotDevice/include -g -std=c++17 -o CMakeFiles\\iLoabotDevice.dir\\src\\factories\\robot_factory.cpp.obj -c D:\\Senad\\Project\\iLoabot_M\\iLoabotDevice\\src\\factories\\robot_factory.cpp",
+  "file": "D:/Senad/Project/iLoabot_M/iLoabotDevice/src/factories/robot_factory.cpp",
+  "output": "D:/Senad/Project/iLoabot_M/iLoabotDevice/build/CMakeFiles/iLoabotDevice.dir/src/factories/robot_factory.cpp.obj"
+},
+{
+  "directory": "D:/Senad/Project/iLoabot_M/iLoabotDevice/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DiLoabotDevice_EXPORTS -ID:/Senad/Project/iLoabot_M/iLoabotDevice/include -g -std=c++17 -o CMakeFiles\\iLoabotDevice.dir\\src\\factories\\agv_factory.cpp.obj -c D:\\Senad\\Project\\iLoabot_M\\iLoabotDevice\\src\\factories\\agv_factory.cpp",
+  "file": "D:/Senad/Project/iLoabot_M/iLoabotDevice/src/factories/agv_factory.cpp",
+  "output": "D:/Senad/Project/iLoabot_M/iLoabotDevice/build/CMakeFiles/iLoabotDevice.dir/src/factories/agv_factory.cpp.obj"
+},
+{
+  "directory": "D:/Senad/Project/iLoabot_M/iLoabotDevice/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DiLoabotDevice_EXPORTS -ID:/Senad/Project/iLoabot_M/iLoabotDevice/include -g -std=c++17 -o CMakeFiles\\iLoabotDevice.dir\\src\\factories\\suction_cup_factory.cpp.obj -c D:\\Senad\\Project\\iLoabot_M\\iLoabotDevice\\src\\factories\\suction_cup_factory.cpp",
+  "file": "D:/Senad/Project/iLoabot_M/iLoabotDevice/src/factories/suction_cup_factory.cpp",
+  "output": "D:/Senad/Project/iLoabot_M/iLoabotDevice/build/CMakeFiles/iLoabotDevice.dir/src/factories/suction_cup_factory.cpp.obj"
+},
+{
+  "directory": "D:/Senad/Project/iLoabot_M/iLoabotDevice/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DiLoabotDevice_EXPORTS -ID:/Senad/Project/iLoabot_M/iLoabotDevice/include -g -std=c++17 -o CMakeFiles\\iLoabotDevice.dir\\src\\factories\\battery_factory.cpp.obj -c D:\\Senad\\Project\\iLoabot_M\\iLoabotDevice\\src\\factories\\battery_factory.cpp",
+  "file": "D:/Senad/Project/iLoabot_M/iLoabotDevice/src/factories/battery_factory.cpp",
+  "output": "D:/Senad/Project/iLoabot_M/iLoabotDevice/build/CMakeFiles/iLoabotDevice.dir/src/factories/battery_factory.cpp.obj"
+},
+{
+  "directory": "D:/Senad/Project/iLoabot_M/iLoabotDevice/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DiLoabotDevice_EXPORTS -ID:/Senad/Project/iLoabot_M/iLoabotDevice/include -g -std=c++17 -o CMakeFiles\\iLoabotDevice.dir\\src\\factories\\charger_factory.cpp.obj -c D:\\Senad\\Project\\iLoabot_M\\iLoabotDevice\\src\\factories\\charger_factory.cpp",
+  "file": "D:/Senad/Project/iLoabot_M/iLoabotDevice/src/factories/charger_factory.cpp",
+  "output": "D:/Senad/Project/iLoabot_M/iLoabotDevice/build/CMakeFiles/iLoabotDevice.dir/src/factories/charger_factory.cpp.obj"
+},
+{
+  "directory": "D:/Senad/Project/iLoabot_M/iLoabotDevice/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DiLoabotDevice_EXPORTS -ID:/Senad/Project/iLoabot_M/iLoabotDevice/include -g -std=c++17 -o CMakeFiles\\iLoabotDevice.dir\\src\\factories\\light_factory.cpp.obj -c D:\\Senad\\Project\\iLoabot_M\\iLoabotDevice\\src\\factories\\light_factory.cpp",
+  "file": "D:/Senad/Project/iLoabot_M/iLoabotDevice/src/factories/light_factory.cpp",
+  "output": "D:/Senad/Project/iLoabot_M/iLoabotDevice/build/CMakeFiles/iLoabotDevice.dir/src/factories/light_factory.cpp.obj"
+},
+{
+  "directory": "D:/Senad/Project/iLoabot_M/iLoabotDevice/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DiLoabotDevice_EXPORTS -ID:/Senad/Project/iLoabot_M/iLoabotDevice/include -g -std=c++17 -o CMakeFiles\\iLoabotDevice.dir\\src\\factories\\plc_factory.cpp.obj -c D:\\Senad\\Project\\iLoabot_M\\iLoabotDevice\\src\\factories\\plc_factory.cpp",
+  "file": "D:/Senad/Project/iLoabot_M/iLoabotDevice/src/factories/plc_factory.cpp",
+  "output": "D:/Senad/Project/iLoabot_M/iLoabotDevice/build/CMakeFiles/iLoabotDevice.dir/src/factories/plc_factory.cpp.obj"
+},
+{
+  "directory": "D:/Senad/Project/iLoabot_M/iLoabotDevice/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DiLoabotDevice_EXPORTS -ID:/Senad/Project/iLoabot_M/iLoabotDevice/include -g -std=c++17 -o CMakeFiles\\iLoabotDevice.dir\\src\\devices\\robot.cpp.obj -c D:\\Senad\\Project\\iLoabot_M\\iLoabotDevice\\src\\devices\\robot.cpp",
+  "file": "D:/Senad/Project/iLoabot_M/iLoabotDevice/src/devices/robot.cpp",
+  "output": "D:/Senad/Project/iLoabot_M/iLoabotDevice/build/CMakeFiles/iLoabotDevice.dir/src/devices/robot.cpp.obj"
+},
+{
+  "directory": "D:/Senad/Project/iLoabot_M/iLoabotDevice/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DiLoabotDevice_EXPORTS -ID:/Senad/Project/iLoabot_M/iLoabotDevice/include -g -std=c++17 -o CMakeFiles\\iLoabotDevice.dir\\src\\devices\\robot002.cpp.obj -c D:\\Senad\\Project\\iLoabot_M\\iLoabotDevice\\src\\devices\\robot002.cpp",
+  "file": "D:/Senad/Project/iLoabot_M/iLoabotDevice/src/devices/robot002.cpp",
+  "output": "D:/Senad/Project/iLoabot_M/iLoabotDevice/build/CMakeFiles/iLoabotDevice.dir/src/devices/robot002.cpp.obj"
+},
+{
+  "directory": "D:/Senad/Project/iLoabot_M/iLoabotDevice/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DiLoabotDevice_EXPORTS -ID:/Senad/Project/iLoabot_M/iLoabotDevice/include -g -std=c++17 -o CMakeFiles\\iLoabotDevice.dir\\src\\devices\\agv.cpp.obj -c D:\\Senad\\Project\\iLoabot_M\\iLoabotDevice\\src\\devices\\agv.cpp",
+  "file": "D:/Senad/Project/iLoabot_M/iLoabotDevice/src/devices/agv.cpp",
+  "output": "D:/Senad/Project/iLoabot_M/iLoabotDevice/build/CMakeFiles/iLoabotDevice.dir/src/devices/agv.cpp.obj"
+},
+{
+  "directory": "D:/Senad/Project/iLoabot_M/iLoabotDevice/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DiLoabotDevice_EXPORTS -ID:/Senad/Project/iLoabot_M/iLoabotDevice/include -g -std=c++17 -o CMakeFiles\\iLoabotDevice.dir\\src\\devices\\agv002.cpp.obj -c D:\\Senad\\Project\\iLoabot_M\\iLoabotDevice\\src\\devices\\agv002.cpp",
+  "file": "D:/Senad/Project/iLoabot_M/iLoabotDevice/src/devices/agv002.cpp",
+  "output": "D:/Senad/Project/iLoabot_M/iLoabotDevice/build/CMakeFiles/iLoabotDevice.dir/src/devices/agv002.cpp.obj"
+},
+{
+  "directory": "D:/Senad/Project/iLoabot_M/iLoabotDevice/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DiLoabotDevice_EXPORTS -ID:/Senad/Project/iLoabot_M/iLoabotDevice/include -g -std=c++17 -o CMakeFiles\\iLoabotDevice.dir\\src\\devices\\suction_cup.cpp.obj -c D:\\Senad\\Project\\iLoabot_M\\iLoabotDevice\\src\\devices\\suction_cup.cpp",
+  "file": "D:/Senad/Project/iLoabot_M/iLoabotDevice/src/devices/suction_cup.cpp",
+  "output": "D:/Senad/Project/iLoabot_M/iLoabotDevice/build/CMakeFiles/iLoabotDevice.dir/src/devices/suction_cup.cpp.obj"
+},
+{
+  "directory": "D:/Senad/Project/iLoabot_M/iLoabotDevice/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DiLoabotDevice_EXPORTS -ID:/Senad/Project/iLoabot_M/iLoabotDevice/include -g -std=c++17 -o CMakeFiles\\iLoabotDevice.dir\\src\\devices\\suction_cup002.cpp.obj -c D:\\Senad\\Project\\iLoabot_M\\iLoabotDevice\\src\\devices\\suction_cup002.cpp",
+  "file": "D:/Senad/Project/iLoabot_M/iLoabotDevice/src/devices/suction_cup002.cpp",
+  "output": "D:/Senad/Project/iLoabot_M/iLoabotDevice/build/CMakeFiles/iLoabotDevice.dir/src/devices/suction_cup002.cpp.obj"
+},
+{
+  "directory": "D:/Senad/Project/iLoabot_M/iLoabotDevice/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DiLoabotDevice_EXPORTS -ID:/Senad/Project/iLoabot_M/iLoabotDevice/include -g -std=c++17 -o CMakeFiles\\iLoabotDevice.dir\\src\\devices\\battery.cpp.obj -c D:\\Senad\\Project\\iLoabot_M\\iLoabotDevice\\src\\devices\\battery.cpp",
+  "file": "D:/Senad/Project/iLoabot_M/iLoabotDevice/src/devices/battery.cpp",
+  "output": "D:/Senad/Project/iLoabot_M/iLoabotDevice/build/CMakeFiles/iLoabotDevice.dir/src/devices/battery.cpp.obj"
+},
+{
+  "directory": "D:/Senad/Project/iLoabot_M/iLoabotDevice/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DiLoabotDevice_EXPORTS -ID:/Senad/Project/iLoabot_M/iLoabotDevice/include -g -std=c++17 -o CMakeFiles\\iLoabotDevice.dir\\src\\devices\\battery002.cpp.obj -c D:\\Senad\\Project\\iLoabot_M\\iLoabotDevice\\src\\devices\\battery002.cpp",
+  "file": "D:/Senad/Project/iLoabot_M/iLoabotDevice/src/devices/battery002.cpp",
+  "output": "D:/Senad/Project/iLoabot_M/iLoabotDevice/build/CMakeFiles/iLoabotDevice.dir/src/devices/battery002.cpp.obj"
+},
+{
+  "directory": "D:/Senad/Project/iLoabot_M/iLoabotDevice/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DiLoabotDevice_EXPORTS -ID:/Senad/Project/iLoabot_M/iLoabotDevice/include -g -std=c++17 -o CMakeFiles\\iLoabotDevice.dir\\src\\devices\\charger.cpp.obj -c D:\\Senad\\Project\\iLoabot_M\\iLoabotDevice\\src\\devices\\charger.cpp",
+  "file": "D:/Senad/Project/iLoabot_M/iLoabotDevice/src/devices/charger.cpp",
+  "output": "D:/Senad/Project/iLoabot_M/iLoabotDevice/build/CMakeFiles/iLoabotDevice.dir/src/devices/charger.cpp.obj"
+},
+{
+  "directory": "D:/Senad/Project/iLoabot_M/iLoabotDevice/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DiLoabotDevice_EXPORTS -ID:/Senad/Project/iLoabot_M/iLoabotDevice/include -g -std=c++17 -o CMakeFiles\\iLoabotDevice.dir\\src\\devices\\charger002.cpp.obj -c D:\\Senad\\Project\\iLoabot_M\\iLoabotDevice\\src\\devices\\charger002.cpp",
+  "file": "D:/Senad/Project/iLoabot_M/iLoabotDevice/src/devices/charger002.cpp",
+  "output": "D:/Senad/Project/iLoabot_M/iLoabotDevice/build/CMakeFiles/iLoabotDevice.dir/src/devices/charger002.cpp.obj"
+},
+{
+  "directory": "D:/Senad/Project/iLoabot_M/iLoabotDevice/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DiLoabotDevice_EXPORTS -ID:/Senad/Project/iLoabot_M/iLoabotDevice/include -g -std=c++17 -o CMakeFiles\\iLoabotDevice.dir\\src\\devices\\light.cpp.obj -c D:\\Senad\\Project\\iLoabot_M\\iLoabotDevice\\src\\devices\\light.cpp",
+  "file": "D:/Senad/Project/iLoabot_M/iLoabotDevice/src/devices/light.cpp",
+  "output": "D:/Senad/Project/iLoabot_M/iLoabotDevice/build/CMakeFiles/iLoabotDevice.dir/src/devices/light.cpp.obj"
+},
+{
+  "directory": "D:/Senad/Project/iLoabot_M/iLoabotDevice/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DiLoabotDevice_EXPORTS -ID:/Senad/Project/iLoabot_M/iLoabotDevice/include -g -std=c++17 -o CMakeFiles\\iLoabotDevice.dir\\src\\devices\\light002.cpp.obj -c D:\\Senad\\Project\\iLoabot_M\\iLoabotDevice\\src\\devices\\light002.cpp",
+  "file": "D:/Senad/Project/iLoabot_M/iLoabotDevice/src/devices/light002.cpp",
+  "output": "D:/Senad/Project/iLoabot_M/iLoabotDevice/build/CMakeFiles/iLoabotDevice.dir/src/devices/light002.cpp.obj"
+},
+{
+  "directory": "D:/Senad/Project/iLoabot_M/iLoabotDevice/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DiLoabotDevice_EXPORTS -ID:/Senad/Project/iLoabot_M/iLoabotDevice/include -g -std=c++17 -o CMakeFiles\\iLoabotDevice.dir\\src\\devices\\plc.cpp.obj -c D:\\Senad\\Project\\iLoabot_M\\iLoabotDevice\\src\\devices\\plc.cpp",
+  "file": "D:/Senad/Project/iLoabot_M/iLoabotDevice/src/devices/plc.cpp",
+  "output": "D:/Senad/Project/iLoabot_M/iLoabotDevice/build/CMakeFiles/iLoabotDevice.dir/src/devices/plc.cpp.obj"
+},
+{
+  "directory": "D:/Senad/Project/iLoabot_M/iLoabotDevice/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DiLoabotDevice_EXPORTS -ID:/Senad/Project/iLoabot_M/iLoabotDevice/include -g -std=c++17 -o CMakeFiles\\iLoabotDevice.dir\\src\\devices\\plc002.cpp.obj -c D:\\Senad\\Project\\iLoabot_M\\iLoabotDevice\\src\\devices\\plc002.cpp",
+  "file": "D:/Senad/Project/iLoabot_M/iLoabotDevice/src/devices/plc002.cpp",
+  "output": "D:/Senad/Project/iLoabot_M/iLoabotDevice/build/CMakeFiles/iLoabotDevice.dir/src/devices/plc002.cpp.obj"
+},
+{
+  "directory": "D:/Senad/Project/iLoabot_M/iLoabotDevice/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DiLoabotDevice_EXPORTS -ID:/Senad/Project/iLoabot_M/iLoabotDevice/include -g -std=c++17 -o CMakeFiles\\iLoabotDevice.dir\\src\\devices\\iloabot_device.cpp.obj -c D:\\Senad\\Project\\iLoabot_M\\iLoabotDevice\\src\\devices\\iloabot_device.cpp",
+  "file": "D:/Senad/Project/iLoabot_M/iLoabotDevice/src/devices/iloabot_device.cpp",
+  "output": "D:/Senad/Project/iLoabot_M/iLoabotDevice/build/CMakeFiles/iLoabotDevice.dir/src/devices/iloabot_device.cpp.obj"
+},
+{
+  "directory": "D:/Senad/Project/iLoabot_M/iLoabotDevice/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DiLoabotDevice_EXPORTS -ID:/Senad/Project/iLoabot_M/iLoabotDevice/include -g -std=c++17 -o CMakeFiles\\iLoabotDevice.dir\\src\\comm\\socket.cpp.obj -c D:\\Senad\\Project\\iLoabot_M\\iLoabotDevice\\src\\comm\\socket.cpp",
+  "file": "D:/Senad/Project/iLoabot_M/iLoabotDevice/src/comm/socket.cpp",
+  "output": "D:/Senad/Project/iLoabot_M/iLoabotDevice/build/CMakeFiles/iLoabotDevice.dir/src/comm/socket.cpp.obj"
+},
+{
+  "directory": "D:/Senad/Project/iLoabot_M/iLoabotDevice/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DiLoabotDevice_EXPORTS -ID:/Senad/Project/iLoabot_M/iLoabotDevice/include -g -std=c++17 -o CMakeFiles\\iLoabotDevice.dir\\src\\comm\\serial_port.cpp.obj -c D:\\Senad\\Project\\iLoabot_M\\iLoabotDevice\\src\\comm\\serial_port.cpp",
+  "file": "D:/Senad/Project/iLoabot_M/iLoabotDevice/src/comm/serial_port.cpp",
+  "output": "D:/Senad/Project/iLoabot_M/iLoabotDevice/build/CMakeFiles/iLoabotDevice.dir/src/comm/serial_port.cpp.obj"
+},
+{
+  "directory": "D:/Senad/Project/iLoabot_M/iLoabotDevice/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DiLoabotDevice_EXPORTS -ID:/Senad/Project/iLoabot_M/iLoabotDevice/include -g -std=c++17 -o CMakeFiles\\iLoabotDevice.dir\\src\\comm\\tcp_client.cpp.obj -c D:\\Senad\\Project\\iLoabot_M\\iLoabotDevice\\src\\comm\\tcp_client.cpp",
+  "file": "D:/Senad/Project/iLoabot_M/iLoabotDevice/src/comm/tcp_client.cpp",
+  "output": "D:/Senad/Project/iLoabot_M/iLoabotDevice/build/CMakeFiles/iLoabotDevice.dir/src/comm/tcp_client.cpp.obj"
+},
+{
+  "directory": "D:/Senad/Project/iLoabot_M/iLoabotDevice/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DiLoabotDevice_EXPORTS -ID:/Senad/Project/iLoabot_M/iLoabotDevice/include -g -std=c++17 -o CMakeFiles\\iLoabotDevice.dir\\src\\comm\\tcp_server.cpp.obj -c D:\\Senad\\Project\\iLoabot_M\\iLoabotDevice\\src\\comm\\tcp_server.cpp",
+  "file": "D:/Senad/Project/iLoabot_M/iLoabotDevice/src/comm/tcp_server.cpp",
+  "output": "D:/Senad/Project/iLoabot_M/iLoabotDevice/build/CMakeFiles/iLoabotDevice.dir/src/comm/tcp_server.cpp.obj"
+},
+{
+  "directory": "D:/Senad/Project/iLoabot_M/iLoabotDevice/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -ID:/Senad/Project/iLoabot_M/iLoabotDevice/include -g -std=c++17 -o CMakeFiles\\iLoabotDeviceDemo.dir\\src\\main.cpp.obj -c D:\\Senad\\Project\\iLoabot_M\\iLoabotDevice\\src\\main.cpp",
+  "file": "D:/Senad/Project/iLoabot_M/iLoabotDevice/src/main.cpp",
+  "output": "D:/Senad/Project/iLoabot_M/iLoabotDevice/build/CMakeFiles/iLoabotDeviceDemo.dir/src/main.cpp.obj"
+}
+]

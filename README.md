@@ -318,6 +318,7 @@ if (client.open()) {
 
 SerialConfig config;
 config.device = "/dev/ttyUSB0";
+// Windows 下可使用 "COM3" 这类串口名
 config.baudRate = BaudRate::Baud115200;
 
 SerialPort serial(config);
@@ -333,17 +334,74 @@ if (serial.open()) {
 项目依赖 Boost.System：
 
 ```bash
-cmake -S . -B build
+cmake -S . -B build -G Ninja
 cmake --build build
 ```
 
 默认会生成两个目标：
 
-- `build/libiLoabotDevice.so`：共享库，可供其他程序动态链接
-- `build/iLoabotDeviceDemo`：示例程序，用于验证设备注册和基础调用流程
+- `build/libiLoabotDevice.dll`：共享库，可供其他程序动态链接
+- `build/iLoabotDeviceDemo.exe`：示例程序，用于验证设备注册和基础调用流程
+
+## C# 引用说明
+
+`libiLoabotDevice.dll` 是原生 C++ DLL，不能像托管程序集那样通过“添加项目引用/程序集引用”直接调用。
+
+C# 侧应使用 `DllImport`（P/Invoke）调用导出的 C 接口（`include/iloabot/c_api.h`）：
+
+```csharp
+using System;
+using System.Runtime.InteropServices;
+
+internal static class ILoabotNative
+{
+    private const string DllName = "libiLoabotDevice.dll";
+
+    [DllImport(DllName, CallingConvention = CallingConvention.Cdecl)]
+    public static extern IntPtr iloabot_create();
+
+    [DllImport(DllName, CallingConvention = CallingConvention.Cdecl)]
+    public static extern void iloabot_destroy(IntPtr handle);
+
+    [DllImport(DllName, CallingConvention = CallingConvention.Cdecl)]
+    public static extern IntPtr iloabot_assemble(
+        IntPtr handle,
+        string robotModel,
+        string agvModel,
+        string suctionCupModel,
+        string batteryModel,
+        string chargerModel,
+        string lightModel,
+        string plcModel);
+
+    [DllImport(DllName, CallingConvention = CallingConvention.Cdecl)]
+    public static extern void iloabot_assembled_destroy(IntPtr assembled);
+
+    [DllImport(DllName, CallingConvention = CallingConvention.Cdecl)]
+    public static extern int iloabot_assembled_product_count(IntPtr assembled);
+
+    [DllImport(DllName, CallingConvention = CallingConvention.Cdecl)]
+    private static extern IntPtr iloabot_assembled_product_type(IntPtr assembled, int index);
+
+    public static string ProductType(IntPtr assembled, int index)
+        => Marshal.PtrToStringAnsi(iloabot_assembled_product_type(assembled, index)) ?? string.Empty;
+}
+```
+
+注意：
+
+- C# 与 DLL 的位数必须一致（x64 对 x64）。
+- 运行时需要能找到 `libiLoabotDevice.dll` 及其依赖（如 MinGW 运行时 DLL）。
+- `CallingConvention` 需要使用 `Cdecl`。
 
 运行示例程序：
 
 ```bash
-./build/iLoabotDeviceDemo
+./build/iLoabotDeviceDemo.exe
 ```
+
+当前仓库默认工具链：MinGW + Ninja（Windows）
+
+- CMake 生成器：`Ninja`
+- C++ 编译器：`C:/msys64/mingw64/bin/g++.exe`
+- 调试器：`C:/msys64/mingw64/bin/gdb.exe`

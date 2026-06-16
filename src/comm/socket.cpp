@@ -43,7 +43,7 @@ bool runTimedOperation(
 
         if (timeoutMs > 0) {
             boost::system::error_code ignoredEc;
-            timer.cancel(ignoredEc);
+            timer.cancel();
         }
     });
 
